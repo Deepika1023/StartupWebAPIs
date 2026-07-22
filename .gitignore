@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+.vscode/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Test
+TestResults/
