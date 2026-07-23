@@ -1,7 +1,12 @@
-﻿using StartupWebAPIs.Data;
-using StartupWebAPIs.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StartupWebAPIs.Data;
+using StartupWebAPIs.Helpers;
+using StartupWebAPIs.Interfaces;
+using StartupWebAPIs.Models;
+using StartupWebAPIs.Responses;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+
 
 namespace StartupWebAPIs.Controllers
 {
@@ -9,69 +14,129 @@ namespace StartupWebAPIs.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        //private readonly AppDbContext _context;
 
-        public ProductsController(AppDbContext context)
+        //public ProductsController(AppDbContext context)
+        //{
+        //    _context = context;
+        //}
+       // private readonly IProductRepository _repository;
+        private readonly IProductService _service;
+
+        //public ProductsController(IProductRepository repository)
+        //{
+        //    _repository = repository;
+        //}
+
+        public ProductsController(IProductService service)
         {
-            _context = context;
+            _service = service;
+        }
+        //[HttpGet]
+        //public async Task<IActionResult> Get()
+        //{
+        //   // var products = await _repository.GetAllAsync();
+        //    return Ok(await _service.GetAllProductsAsync());
+            
+            
+        //}
+
+        [HttpGet]  //Pagination // Search
+        public async Task<IActionResult> Get(string? search, int page = 1, int pageSize = 5)
+        {
+            var totalRecords = (await _service.GetAllProductsAsync()).Count();
+
+                                                                                                   
+            var products = (await _service.GetAllProductsAsync())
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var result = new PagedResult<Product>
+            {
+                Data = products,
+                Page = page,
+                PageSize = pageSize,
+                TotalRecords = totalRecords
+            };
+
+            return Ok(result);
+
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpGet]  //Pagination
+        public async Task<IActionResult> Get(string? search, int page = 1, int pageSize = 5)
         {
-            return Ok(await _context.Products.ToListAsync());
-        }
+            var allProducts = await _service.GetAllProductsAsync();
+            var totalRecords = allProducts.Count();
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
-        {
-            var product = await _context.Products.FindAsync(id);
+            // Search
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                allProducts = allProducts.Where(x => x.Name.ToLower().Contains(search.ToLower())).ToList();
+                totalRecords = allProducts.Count();
+            }
 
-            if (product == null)
-                return NotFound();
+            var products = allProducts
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
 
-            return Ok(product);
+            var result = new PagedResult<Product>
+            {
+                Data = products,
+                Page = page,
+                PageSize = pageSize,
+                TotalRecords = totalRecords
+            };
+
+            return Ok(result);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(Product product)
         {
-            _context.Products.Add(product);
+            var created = await _service.CreateProductAsync(product);
 
-            await _context.SaveChangesAsync();
-
-            return Ok(product);
+            //return Ok(created);
+            return Ok(new ApiResponse<Product>
+            (
+             true,
+             "Product created successfully.",
+             created
+             ));
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Product product)
         {
-            var existing = await _context.Products.FindAsync(id);
+            var updated = await _service.UpdateProductAsync(id, product);
 
-            if (existing == null)
+            if (updated == null)
                 return NotFound();
 
-            existing.Name = product.Name;
-            existing.Price = product.Price;
-
-            await _context.SaveChangesAsync();
-
-            return Ok(existing);
+            return Ok(new ApiResponse<Product>
+             (
+              true,
+              "Product updated successfully.",
+              updated
+              ));
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var deleted = await _service.DeleteProductAsync(id);
 
-            if (product == null)
+            if (!deleted)
                 return NotFound();
 
-            _context.Products.Remove(product);
-
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return Ok(new ApiResponse<string>
+                (
+                 true,
+                 "Product deleted successfully.",
+                 null
+                 ));
         }
     }
 }

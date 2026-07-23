@@ -6,11 +6,22 @@ using Microsoft.OpenApi.Models;
 using StartupWebAPIs.Data;
 using StartupWebAPIs.Middleware;
 using StartupWebAPIs.Services;
+using StartupWebAPIs.Interfaces;
+using StartupWebAPIs.Repositories;
+using Serilog;
 using System.Text;
 
+//Serilog
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt",
+        rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog();
 
 // Add services to the container.
 
@@ -26,6 +37,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(
     builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
+
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -115,7 +129,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseMiddleware<ApiKeyMiddleware>();
-
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthentication();
 
 app.UseAuthorization();
