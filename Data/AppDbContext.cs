@@ -1,5 +1,4 @@
 ﻿using StartupWebAPIs.Models;
-using StartupWebAPIs.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;

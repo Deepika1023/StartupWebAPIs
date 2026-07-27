@@ -1,0 +1,407 @@
+2026-07-24 12:54:38.303 +05:30 [INF] User profile is available. Using 'C:\Users\DEEPIKA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-24 12:54:39.437 +05:30 [INF] Now listening on: https://localhost:7132
+2026-07-24 12:54:39.439 +05:30 [INF] Now listening on: http://localhost:5179
+2026-07-24 12:54:39.887 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-24 12:54:39.890 +05:30 [INF] Hosting environment: Development
+2026-07-24 12:54:39.892 +05:30 [INF] Content root path: D:\UserRepo\StartupWebAPIs
+2026-07-24 12:54:49.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/index.html - null null
+2026-07-24 12:54:51.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/index.html - 200 null text/html;charset=utf-8 2054.6392ms
+2026-07-24 12:54:51.766 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-24 12:54:51.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - null null
+2026-07-24 12:54:51.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 89.1639ms
+2026-07-24 12:54:52.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - 200 null text/javascript; charset=UTF-8 321.2787ms
+2026-07-24 12:54:52.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - null null
+2026-07-24 12:54:52.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 215.6958ms
+2026-07-24 12:55:51.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?page=1&pageSize=4 - null null
+2026-07-24 12:56:51.031 +05:30 [INF] Executed DbCommand (231ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 12:56:59.441 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 07:26:59'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 12:56:59.569 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 07:26:59'.
+2026-07-24 12:56:59.600 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 12:56:59.695 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 12:57:46.315 +05:30 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 12:58:18.050 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 12:58:18.265 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 78540.51ms
+2026-07-24 12:58:18.273 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 12:58:18.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?page=1&pageSize=4 - 200 null application/json; charset=utf-8 147600.6146ms
+2026-07-24 13:43:23.643 +05:30 [INF] User profile is available. Using 'C:\Users\DEEPIKA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-24 13:43:27.931 +05:30 [INF] Now listening on: https://localhost:7132
+2026-07-24 13:43:27.935 +05:30 [INF] Now listening on: http://localhost:5179
+2026-07-24 13:43:29.021 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-24 13:43:29.024 +05:30 [INF] Hosting environment: Development
+2026-07-24 13:43:29.026 +05:30 [INF] Content root path: D:\UserRepo\StartupWebAPIs
+2026-07-24 13:44:23.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger - null null
+2026-07-24 13:44:25.415 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger - 301 0 null 1631.3017ms
+2026-07-24 13:44:25.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/index.html - null null
+2026-07-24 13:44:25.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/index.html - 200 null text/html;charset=utf-8 266.539ms
+2026-07-24 13:44:25.715 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/swagger-ui.css - null null
+2026-07-24 13:44:25.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - null null
+2026-07-24 13:44:25.717 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-24 13:44:25.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-24 13:44:25.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/swagger-ui-bundle.js - null null
+2026-07-24 13:44:25.778 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 60.5058ms
+2026-07-24 13:44:25.871 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-07-24 13:44:25.871 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-07-24 13:44:25.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 158.6123ms
+2026-07-24 13:44:25.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/swagger-ui.css - 200 152034 text/css 162.2114ms
+2026-07-24 13:44:25.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - 200 null text/javascript; charset=UTF-8 201.4805ms
+2026-07-24 13:44:26.011 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-07-24 13:44:26.013 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 297.2101ms
+2026-07-24 13:44:26.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - null null
+2026-07-24 13:44:27.085 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 442.1945ms
+2026-07-24 13:44:28.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/favicon-32x32.png - null null
+2026-07-24 13:44:28.128 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-07-24 13:44:28.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/favicon-32x32.png - 200 628 image/png 8.6858ms
+2026-07-24 13:59:46.493 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7132/api/Products - application/json 36
+2026-07-24 14:00:07.278 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7132/api/Products - 401 null null 20793.9673ms
+2026-07-24 14:07:51.512 +05:30 [INF] User profile is available. Using 'C:\Users\DEEPIKA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-24 14:07:54.170 +05:30 [INF] Now listening on: https://localhost:7132
+2026-07-24 14:07:54.172 +05:30 [INF] Now listening on: http://localhost:5179
+2026-07-24 14:07:54.742 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-24 14:07:54.750 +05:30 [INF] Hosting environment: Development
+2026-07-24 14:07:54.751 +05:30 [INF] Content root path: D:\UserRepo\StartupWebAPIs
+2026-07-24 14:08:01.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/index.html - null null
+2026-07-24 14:08:10.351 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/index.html - 200 null text/html;charset=utf-8 8491.3818ms
+2026-07-24 14:08:10.581 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-24 14:08:10.595 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - null null
+2026-07-24 14:08:10.655 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 73.7889ms
+2026-07-24 14:08:10.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - 200 null text/javascript; charset=UTF-8 201.8492ms
+2026-07-24 14:08:11.766 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - null null
+2026-07-24 14:08:11.908 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 142.8706ms
+2026-07-24 14:10:44.672 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7132/api/Auth/login - application/json 70
+2026-07-24 14:11:07.275 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.AuthController.Login (StartupWebAPIs)'
+2026-07-24 14:11:08.385 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StartupWebAPIs.DTOs.LoginDto) on controller StartupWebAPIs.Controllers.AuthController (StartupWebAPIs).
+2026-07-24 14:11:28.460 +05:30 [INF] Executed DbCommand (113ms) [Parameters=[@__dto_Email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Email", u."Name", u."PasswordHash"
+FROM "Users" AS u
+WHERE u."Email" = @__dto_Email_0
+LIMIT 1
+2026-07-24 14:11:48.952 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.DTOs.LoginResponseDto'.
+2026-07-24 14:11:48.998 +05:30 [INF] Executed action StartupWebAPIs.Controllers.AuthController.Login (StartupWebAPIs) in 40605.6384ms
+2026-07-24 14:11:49.005 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.AuthController.Login (StartupWebAPIs)'
+2026-07-24 14:11:49.283 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7132/api/Auth/login - 200 null application/json; charset=utf-8 64695.7863ms
+2026-07-24 14:13:02.439 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7132/api/Products - application/json 36
+2026-07-24 14:13:19.055 +05:30 [INF] Executed DbCommand (164ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 14:13:20.805 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Create (StartupWebAPIs)'
+2026-07-24 14:13:20.870 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StartupWebAPIs.DTOs.CreateProductDto) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 14:13:21.943 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-07-24 14:13:22.090 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Create (StartupWebAPIs) in 1195.9445ms
+2026-07-24 14:13:22.092 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Create (StartupWebAPIs)'
+2026-07-24 14:13:22.096 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7132/api/Products - 400 null application/problem+json; charset=utf-8 19705.1696ms
+2026-07-24 14:14:03.565 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7132/api/Products - application/json 35
+2026-07-24 14:14:04.526 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 14:14:04.621 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Create (StartupWebAPIs)'
+2026-07-24 14:14:04.672 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(StartupWebAPIs.DTOs.CreateProductDto) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 14:14:07.315 +05:30 [INF] Executed DbCommand (97ms) [Parameters=[@p0='?', @p1='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Name", "Price")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2026-07-24 14:14:07.432 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Responses.ApiResponse`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 14:14:07.475 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Create (StartupWebAPIs) in 2797.5005ms
+2026-07-24 14:14:07.478 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Create (StartupWebAPIs)'
+2026-07-24 14:14:07.480 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7132/api/Products - 200 null application/json; charset=utf-8 3997.6576ms
+2026-07-24 14:16:45.944 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?sort=mobile&page=1&pageSize=5 - null null
+2026-07-24 14:16:46.160 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 14:16:46.225 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 14:16:46.276 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 14:17:11.373 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 14:18:10.926 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 14:18:11.499 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 14:18:11.584 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 85305.608ms
+2026-07-24 14:18:11.589 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 14:18:11.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?sort=mobile&page=1&pageSize=5 - 200 null application/json; charset=utf-8 85659.7556ms
+2026-07-24 14:18:18.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?sort=name&page=1&pageSize=5 - null null
+2026-07-24 14:18:18.515 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 14:18:18.623 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 14:18:18.628 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 14:18:29.731 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 14:19:18.493 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 14:19:18.512 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 59881.6452ms
+2026-07-24 14:19:18.548 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 14:19:18.591 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?sort=name&page=1&pageSize=5 - 200 null application/json; charset=utf-8 60155.1707ms
+2026-07-24 17:42:34.333 +05:30 [INF] User profile is available. Using 'C:\Users\DEEPIKA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-24 17:42:39.876 +05:30 [INF] Now listening on: https://localhost:7132
+2026-07-24 17:42:39.945 +05:30 [INF] Now listening on: http://localhost:5179
+2026-07-24 17:42:40.985 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-24 17:42:41.055 +05:30 [INF] Hosting environment: Development
+2026-07-24 17:42:41.059 +05:30 [INF] Content root path: D:\UserRepo\StartupWebAPIs
+2026-07-24 17:42:44.868 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/index.html - null null
+2026-07-24 17:42:51.217 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/index.html - 200 null text/html;charset=utf-8 6508.1779ms
+2026-07-24 17:42:51.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-24 17:42:51.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - null null
+2026-07-24 17:42:51.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 74.7697ms
+2026-07-24 17:42:51.745 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - 200 null text/javascript; charset=UTF-8 358.3862ms
+2026-07-24 17:42:52.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - null null
+2026-07-24 17:42:52.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 415.3311ms
+2026-07-24 17:47:31.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?sort=price_desc&search=mobile&page=1&pageSize=5 - null null
+2026-07-24 17:47:48.475 +05:30 [INF] Executed DbCommand (368ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 17:47:58.414 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 12:17:58'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 17:47:58.661 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 12:17:58'.
+2026-07-24 17:47:58.704 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 17:47:58.973 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 17:48:50.619 +05:30 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 17:48:52.262 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 17:48:52.815 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 53776.732ms
+2026-07-24 17:48:52.830 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 17:48:53.047 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?sort=price_desc&search=mobile&page=1&pageSize=5 - 200 null application/json; charset=utf-8 81953.0576ms
+2026-07-24 19:13:44.492 +05:30 [INF] User profile is available. Using 'C:\Users\DEEPIKA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-24 19:13:45.101 +05:30 [INF] Now listening on: https://localhost:7132
+2026-07-24 19:13:45.102 +05:30 [INF] Now listening on: http://localhost:5179
+2026-07-24 19:13:45.210 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-24 19:13:45.212 +05:30 [INF] Hosting environment: Development
+2026-07-24 19:13:45.212 +05:30 [INF] Content root path: D:\UserRepo\StartupWebAPIs
+2026-07-24 19:13:46.717 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger - null null
+2026-07-24 19:13:46.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger - 301 0 null 254.4274ms
+2026-07-24 19:13:46.974 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/index.html - null null
+2026-07-24 19:13:47.052 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/index.html - 200 null text/html;charset=utf-8 77.8288ms
+2026-07-24 19:13:47.102 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/swagger-ui.css - null null
+2026-07-24 19:13:47.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-24 19:13:47.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-24 19:13:47.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - null null
+2026-07-24 19:13:47.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/swagger-ui-bundle.js - null null
+2026-07-24 19:13:47.172 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 68.1269ms
+2026-07-24 19:13:47.246 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-07-24 19:13:47.246 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-07-24 19:13:47.249 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/swagger-ui.css - 200 152034 text/css 147.8631ms
+2026-07-24 19:13:47.249 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 145.9955ms
+2026-07-24 19:13:47.290 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-07-24 19:13:47.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.9586ms
+2026-07-24 19:13:47.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 188.5926ms
+2026-07-24 19:13:47.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - null null
+2026-07-24 19:13:47.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.9227ms
+2026-07-24 19:23:17.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?minPrice=100&page=1&pageSize=3 - null null
+2026-07-24 19:23:21.365 +05:30 [INF] Executed DbCommand (77ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:23:23.205 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:53:23'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:23:23.244 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:53:23'.
+2026-07-24 19:23:23.249 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:23:23.275 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:23:29.357 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:23:29.398 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:23:29.419 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 6125.7569ms
+2026-07-24 19:23:29.421 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:23:29.432 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?minPrice=100&page=1&pageSize=3 - 200 null application/json; charset=utf-8 11610.6117ms
+2026-07-24 19:23:47.576 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?minPrice=100&maxPrice=100&page=1&pageSize=3 - null null
+2026-07-24 19:23:47.657 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:23:47.663 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:53:47'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:23:47.665 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:53:47'.
+2026-07-24 19:23:47.665 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:23:47.666 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:23:47.670 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:23:47.673 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:23:47.675 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 7.5726ms
+2026-07-24 19:23:47.675 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:23:47.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?minPrice=100&maxPrice=100&page=1&pageSize=3 - 200 null application/json; charset=utf-8 101.0931ms
+2026-07-24 19:23:59.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?sort=name&minPrice=100&maxPrice=100&page=1&pageSize=3 - null null
+2026-07-24 19:23:59.473 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:23:59.477 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:53:59'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:23:59.481 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:53:59'.
+2026-07-24 19:23:59.482 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:23:59.483 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:23:59.487 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:23:59.489 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:23:59.490 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 5.6102ms
+2026-07-24 19:23:59.490 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:23:59.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?sort=name&minPrice=100&maxPrice=100&page=1&pageSize=3 - 200 null application/json; charset=utf-8 49.2408ms
+2026-07-24 19:24:10.464 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?search=ball&sort=name&minPrice=100&maxPrice=100&page=1&pageSize=3 - null null
+2026-07-24 19:24:10.471 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:24:10.474 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:10'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:24:10.477 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:10'.
+2026-07-24 19:24:10.477 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:10.478 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:24:10.483 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:24:10.488 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:24:10.489 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 9.9507ms
+2026-07-24 19:24:10.490 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:10.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?search=ball&sort=name&minPrice=100&maxPrice=100&page=1&pageSize=3 - 200 null application/json; charset=utf-8 26.9369ms
+2026-07-24 19:24:17.619 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?search=mobile&sort=name&minPrice=100&maxPrice=100&page=1&pageSize=3 - null null
+2026-07-24 19:24:17.625 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:24:17.628 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:17'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:24:17.631 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:17'.
+2026-07-24 19:24:17.632 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:17.634 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:24:17.637 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:24:17.638 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:24:17.640 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 4.3098ms
+2026-07-24 19:24:17.640 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:17.642 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?search=mobile&sort=name&minPrice=100&maxPrice=100&page=1&pageSize=3 - 200 null application/json; charset=utf-8 23.3658ms
+2026-07-24 19:24:31.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?search=ball&sort=name&page=1&pageSize=3 - null null
+2026-07-24 19:24:31.777 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:24:31.785 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:31'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:24:31.792 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:31'.
+2026-07-24 19:24:31.793 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:31.794 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:24:31.798 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:24:31.800 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:24:31.800 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 4.854ms
+2026-07-24 19:24:31.801 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:31.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?search=ball&sort=name&page=1&pageSize=3 - 200 null application/json; charset=utf-8 40.4643ms
+2026-07-24 19:24:40.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?search=ball&page=1&pageSize=3 - null null
+2026-07-24 19:24:40.051 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:24:40.054 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:40'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:24:40.058 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 13:54:40'.
+2026-07-24 19:24:40.059 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:40.060 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:24:40.063 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:24:40.065 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:24:40.066 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 4.4581ms
+2026-07-24 19:24:40.066 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:24:40.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?search=ball&page=1&pageSize=3 - 200 null application/json; charset=utf-8 24.3534ms
+2026-07-24 19:37:43.227 +05:30 [INF] User profile is available. Using 'C:\Users\DEEPIKA\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-24 19:37:43.893 +05:30 [INF] Now listening on: https://localhost:7132
+2026-07-24 19:37:43.895 +05:30 [INF] Now listening on: http://localhost:5179
+2026-07-24 19:37:44.054 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-24 19:37:44.056 +05:30 [INF] Hosting environment: Development
+2026-07-24 19:37:44.057 +05:30 [INF] Content root path: D:\UserRepo\StartupWebAPIs
+2026-07-24 19:37:45.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/index.html - null null
+2026-07-24 19:37:45.443 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 135.4814 ms
+2026-07-24 19:37:45.453 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-24 19:37:45.456 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/index.html - 200 null text/html;charset=utf-8 433.8467ms
+2026-07-24 19:37:45.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 19.7804ms
+2026-07-24 19:37:45.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/_vs/browserLink - null null
+2026-07-24 19:37:45.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.4491ms
+2026-07-24 19:37:45.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - null null
+2026-07-24 19:37:45.945 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.0875 ms
+2026-07-24 19:37:45.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.5515ms
+2026-07-24 19:38:53.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7132/api/Products?maxPrice=100&page=1&pageSize=5 - null null
+2026-07-24 19:38:56.925 +05:30 [INF] Executed DbCommand (109ms) [Parameters=[@__apiKeyValue_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreatedOn", a."IsActive", a."Key", a."UserId"
+FROM "ApiKeys" AS a
+WHERE a."Key" = @__apiKeyValue_0 AND a."IsActive"
+LIMIT 1
+2026-07-24 19:38:59.307 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 14:08:59'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-07-24 19:38:59.361 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '22-07-2026 14:55:15', Current time (UTC): '24-07-2026 14:08:59'.
+2026-07-24 19:38:59.368 +05:30 [INF] Executing endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:38:59.416 +05:30 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String, System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], Int32, Int32) on controller StartupWebAPIs.Controllers.ProductsController (StartupWebAPIs).
+2026-07-24 19:38:59.665 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Price"
+FROM "Products" AS p
+2026-07-24 19:38:59.718 +05:30 [INF] Executing OkObjectResult, writing value of type 'StartupWebAPIs.Helpers.PagedResult`1[[StartupWebAPIs.DTOs.ProductDto, StartupWebAPIs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-24 19:38:59.742 +05:30 [INF] Executed action StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs) in 316.7546ms
+2026-07-24 19:38:59.743 +05:30 [INF] Executed endpoint 'StartupWebAPIs.Controllers.ProductsController.Get (StartupWebAPIs)'
+2026-07-24 19:38:59.745 +05:30 [INF] HTTP GET /api/Products responded 200 in 6292.3352 ms
+2026-07-24 19:38:59.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7132/api/Products?maxPrice=100&page=1&pageSize=5 - 200 null application/json; charset=utf-8 6321.2948ms

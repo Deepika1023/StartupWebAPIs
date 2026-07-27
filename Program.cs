@@ -8,25 +8,37 @@ using StartupWebAPIs.Middleware;
 using StartupWebAPIs.Services;
 using StartupWebAPIs.Interfaces;
 using StartupWebAPIs.Repositories;
+using StartupWebAPIs.Mapping;
 using Serilog;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using StartupWebAPIs.Validators;
 using System.Text;
 
-//Serilog
+////Serilog
 
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("Logs/log-.txt",
-        rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+//Log.Logger = new LoggerConfiguration()
+//    .WriteTo.Console()
+//    .WriteTo.File("Logs/log-.txt",
+//        rollingInterval: RollingInterval.Day)
+//    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog((context, loggerConfiguration) =>
+{
+    loggerConfiguration.ReadFrom.Configuration(context.Configuration);
+});
 
 builder.Host.UseSerilog();
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -116,7 +128,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 });
 var app = builder.Build();
-
+app.UseSerilogRequestLogging();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

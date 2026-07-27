@@ -1,4 +1,5 @@
-﻿using StartupWebAPIs.Interfaces;
+﻿using StartupWebAPIs.Controllers;
+using StartupWebAPIs.Interfaces;
 using StartupWebAPIs.Models;
 
 namespace StartupWebAPIs.Services
@@ -6,15 +7,66 @@ namespace StartupWebAPIs.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _repository;
+        private readonly ILogger<ProductsController> _logger;
 
-        public ProductService(IProductRepository repository)
+        public ProductService(IProductRepository repository, ILogger<ProductsController> logger)
         {
             _repository = repository;
+            _logger = logger;
         }
 
-        public async Task<IEnumerable<Product>> GetAllProductsAsync()
+       // public async Task<IEnumerable<Product>> GetAllProductsAsync(string? search, string? sort)
+        public async Task<IEnumerable<Product>> GetAllProductsAsync(string? search,string? sort,decimal? minPrice,decimal? maxPrice)
         {
-            return await _repository.GetAllAsync();
+            var products = await _repository.GetAllAsync();
+
+            // Search
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                products = products.Where(p =>
+                    p.Name.Contains(search, StringComparison.OrdinalIgnoreCase));
+
+            }
+            // Minimum Price
+            if (minPrice.HasValue)
+            {
+                products = products.Where(p => p.Price >= minPrice.Value);
+            }
+
+            // Maximum Price
+            if (maxPrice.HasValue)
+            {
+                products = products.Where(p => p.Price <= maxPrice.Value);
+            }
+
+
+            // Sorting
+            products = sort?.ToLower() switch
+            {
+                "name" => products.OrderBy(p => p.Name),
+
+                "name_desc" => products.OrderByDescending(p => p.Name),
+
+                "price" => products.OrderBy(p => p.Price),
+
+                "price_desc" => products.OrderByDescending(p => p.Price),
+
+                _ => products.OrderBy(p => p.Id)
+            };
+            try
+            {
+                // database operation
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(
+                    ex,
+                    "Error occurred while creating product");
+
+                throw;
+            }
+            return products;
+
         }
 
         public async Task<Product?> GetProductByIdAsync(int id)
