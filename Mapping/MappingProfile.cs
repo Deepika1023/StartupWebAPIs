@@ -13,6 +13,7 @@ namespace StartupWebAPIs.Mapping
 
             // DTO -> Entity
             CreateMap<CreateProductDto, Product>();
+            CreateMap<Product, ProductV2Dto>();
         }
     }
 }

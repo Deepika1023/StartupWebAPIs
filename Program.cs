@@ -13,7 +13,10 @@ using Serilog;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using StartupWebAPIs.Validators;
+using Asp.Versioning;
+using Asp.Versioning.ApiExplorer;
 using System.Text;
+using StartupWebAPIs.Swagger;
 
 ////Serilog
 
@@ -28,8 +31,7 @@ builder.Host.UseSerilog((context, loggerConfiguration) =>
 {
     loggerConfiguration.ReadFrom.Configuration(context.Configuration);
 });
-
-builder.Host.UseSerilog();
+//builder.Host.UseSerilog();
 
 // Add services to the container.
 
@@ -43,8 +45,8 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-   // options.UseSqlServer(
-      //  builder.Configuration.GetConnectionString("DefaultConnection"));
+    // options.UseSqlServer(
+    //  builder.Configuration.GetConnectionString("DefaultConnection"));
 
     options.UseNpgsql(
     builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -71,10 +73,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
     };
 });
+builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
 
 builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(options =>
 {
+    var xmlFilename = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    
+    //options.DocInclusionPredicate((docName, apiDesc) =>
+    //{
+    //    var versions = apiDesc.ActionDescriptor.EndpointMetadata
+    //        .OfType<ApiVersionAttribute>()
+    //        .SelectMany(v => v.Versions);
+
+    //    return versions.Any(v => $"v{v.ToString()}" == docName);
+    //});
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -127,13 +140,43 @@ builder.Services.AddSwaggerGen(options =>
     }
 });
 });
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+
+    options.AssumeDefaultVersionWhenUnspecified = true;
+
+    options.ReportApiVersions = true;
+
+    options.ApiVersionReader = new UrlSegmentApiVersionReader();
+})
+.AddApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV";
+
+    options.SubstituteApiVersionInUrl = true;
+});
 var app = builder.Build();
 app.UseSerilogRequestLogging();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    //app.UseSwaggerUI();
+    var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
+
+    app.UseSwaggerUI(options =>
+    {
+
+        // options.SwaggerEndpoint("/swagger/v1/swagger.json", "Startup Web APIs V1");
+        //options.SwaggerEndpoint("/swagger/v2/swagger.json", "Startup Web APIs V2");
+        foreach (var description in provider.ApiVersionDescriptions)
+        {
+            options.SwaggerEndpoint(
+                $"/swagger/{description.GroupName}/swagger.json",
+                description.GroupName.ToUpperInvariant());
+        }
+    });
 }
 
 

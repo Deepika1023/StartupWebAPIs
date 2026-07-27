@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Asp.Versioning;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StartupWebAPIs.Data;
@@ -10,10 +11,12 @@ using StartupWebAPIs.Responses;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 
-namespace StartupWebAPIs.Controllers
+namespace StartupWebAPIs.Controllers.V1
 {
     [ApiController]
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class ProductsController : ControllerBase
     {
         //private readonly AppDbContext _context;
