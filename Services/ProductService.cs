@@ -7,9 +7,9 @@ namespace StartupWebAPIs.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _repository;
-        private readonly ILogger<ProductService> _logger;
+        private readonly ILogger<ProductsController> _logger;
 
-        public ProductService(IProductRepository repository, ILogger<ProductService> logger)
+        public ProductService(IProductRepository repository, ILogger<ProductsController> logger)
         {
             _repository = repository;
             _logger = logger;
