@@ -1,22 +1,27 @@
+using Asp.Versioning;
+using Asp.Versioning.ApiExplorer;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using StartupWebAPIs.Data;
-using StartupWebAPIs.Middleware;
-using StartupWebAPIs.Services;
-using StartupWebAPIs.Interfaces;
-using StartupWebAPIs.Repositories;
-using StartupWebAPIs.Mapping;
 using Serilog;
-using FluentValidation;
-using FluentValidation.AspNetCore;
-using StartupWebAPIs.Validators;
-using Asp.Versioning;
-using Asp.Versioning.ApiExplorer;
-using System.Text;
+using StartupWebAPIs.Data;
+using StartupWebAPIs.Interfaces;
+using StartupWebAPIs.Mapping;
+using StartupWebAPIs.Middleware;
+using StartupWebAPIs.Repositories;
+using StartupWebAPIs.Services;
 using StartupWebAPIs.Swagger;
+using StartupWebAPIs.Validators;
+using System.Text;
+using Hangfire;
+using Hangfire.PostgreSql;
+using System.Threading.RateLimiting;
+using StartupWebAPIs.Jobs;
 
 ////Serilog
 
@@ -40,6 +45,21 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.Configuration = "localhost:6379";
     options.InstanceName = "StartupWebAPIs:";
 });
+builder.Services.AddHangfire(config =>
+{
+    config.UsePostgreSqlStorage(options =>
+        options.UseNpgsqlConnection(
+            builder.Configuration.GetConnectionString("DefaultConnection")));
+});
+
+builder.Services.AddHangfireServer();
+builder.Services.AddHealthChecks()
+    .AddNpgSql(
+        builder.Configuration.GetConnectionString("DefaultConnection")!,
+        name: "PostgreSQL")
+    .AddRedis(
+        "localhost:6379",
+        name: "Redis");
 builder.Services.AddControllers();
 builder.Services.AddMemoryCache();
 
@@ -63,6 +83,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 
 
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<BackgroundJobs>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -163,7 +184,32 @@ builder.Services.AddApiVersioning(options =>
 
     options.SubstituteApiVersionInUrl = true;
 });
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("ApiPolicy", limiterOptions =>
+    {
+        limiterOptions.PermitLimit = 100;
+        limiterOptions.Window = TimeSpan.FromMinutes(1);
+        limiterOptions.QueueLimit = 0;
+    });
+
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+    options.OnRejected = async (context, cancellationToken) =>
+    {
+        context.HttpContext.Response.ContentType = "application/json";
+
+        await context.HttpContext.Response.WriteAsJsonAsync(new
+        {
+            Success = false,
+            Message = "Rate limit exceeded. Please try again later.",
+            StatusCode = 429
+        }, cancellationToken);
+    };
+});
 var app = builder.Build();
+app.MapGet("/test-rate", () => "OK")
+   .RequireRateLimiting("ApiPolicy");
 app.UseSerilogRequestLogging();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -187,17 +233,23 @@ if (app.Environment.IsDevelopment())
 }
 
 
-
 app.UseHttpsRedirection();
 
-app.UseMiddleware<ApiKeyMiddleware>();
 app.UseMiddleware<ExceptionMiddleware>();
+
+app.UseMiddleware<ApiKeyMiddleware>();
+
+app.UseRateLimiter();      // <-- Move here
+
 app.UseAuthentication();
 
 app.UseAuthorization();
 
+app.UseHangfireDashboard("/hangfire");
+
 app.MapControllers();
 
+app.MapHealthChecks("/health"); 
 app.Run();
 
 

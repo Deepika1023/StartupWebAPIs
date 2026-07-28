@@ -8,11 +8,13 @@ using StartupWebAPIs.Helpers;
 using StartupWebAPIs.Interfaces;
 using StartupWebAPIs.Models;
 using StartupWebAPIs.Responses;
+using Microsoft.AspNetCore.RateLimiting;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 
 namespace StartupWebAPIs.Controllers.V1
 {
+    [EnableRateLimiting("ApiPolicy")]
     [ApiController]
     //[Route("api/[controller]")]
     [ApiVersion("1.0")]
@@ -96,7 +98,7 @@ namespace StartupWebAPIs.Controllers.V1
                 PageSize = pageSize,
                 TotalRecords = totalRecords
             };
-
+            _logger.LogInformation("Products endpoint executed.");
             return Ok(result);
         }
 
@@ -158,6 +160,12 @@ namespace StartupWebAPIs.Controllers.V1
                  "Product deleted successfully.",
                  null
                  ));
+        }
+
+        [HttpGet("error")]
+        public IActionResult TestError()
+        {
+            throw new Exception("This is a test exception.");
         }
     }
 }

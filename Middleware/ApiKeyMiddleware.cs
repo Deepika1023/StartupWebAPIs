@@ -25,19 +25,16 @@ namespace StartupWebAPIs.Middleware
 
             if (path!.StartsWith("/api/auth") ||
                 path.StartsWith("/swagger") ||
-                path.StartsWith("/api/apikey"))
+                path.StartsWith("/api/apikey") ||
+                path.StartsWith("/health") ||
+                path.StartsWith("/hangfire") ||
+                path.StartsWith("/favicon.ico"))
             {
                 await _next(context);
                 return;
             }
 
-            // Skip Swagger
-            if (context.Request.Path.StartsWithSegments("/swagger"))
-            {
-                await _next(context);
-                return;
-            }
-
+           
             // Check if header exists
             if (!context.Request.Headers.TryGetValue(ApiKeyHeaderName, out var extractedApiKey))
             {
