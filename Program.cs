@@ -27,6 +27,7 @@ using StartupWebAPIs.Swagger;
 //    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Host.UseSerilog((context, loggerConfiguration) =>
 {
     loggerConfiguration.ReadFrom.Configuration(context.Configuration);
@@ -34,8 +35,14 @@ builder.Host.UseSerilog((context, loggerConfiguration) =>
 //builder.Host.UseSerilog();
 
 // Add services to the container.
-
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = "localhost:6379";
+    options.InstanceName = "StartupWebAPIs:";
+});
 builder.Services.AddControllers();
+builder.Services.AddMemoryCache();
+
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));

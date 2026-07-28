@@ -1,0 +1,43 @@
+2026-07-27 18:24:23 [INF] HTTP GET /swagger/index.html responded 200 in 236.4540 ms
+2026-07-27 18:24:24 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 32.1044 ms
+2026-07-27 18:24:57 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 18:24:57 [INF] Cache MISS - Loading products from database.
+2026-07-27 18:24:57 [INF] Products stored in memory cache.
+2026-07-27 18:24:57 [INF] HTTP GET /api/Products responded 200 in 10959.9633 ms
+2026-07-27 18:25:31 [INF] HTTP GET /swagger/v2/swagger.json responded 200 in 50.6924 ms
+2026-07-27 18:25:35 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 16.4215 ms
+2026-07-27 18:26:04 [INF] HTTP GET /api/v1/Products responded 401 in 1.6378 ms
+2026-07-27 18:26:32 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 18:26:32 [INF] Cache HIT - Products loaded from memory cache.
+2026-07-27 18:26:32 [INF] HTTP GET /api/v1/Products responded 200 in 171.3695 ms
+2026-07-27 18:27:18 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 18:27:36 [INF] Cache HIT - Products loaded from memory cache.
+2026-07-27 18:27:43 [INF] HTTP GET /api/v1/Products responded 200 in 25535.2621 ms
+2026-07-27 18:28:11 [INF] Creating product DeskTop with Price=5000
+2026-07-27 18:28:11 [INF] Product cache cleared after updating a product.
+2026-07-27 18:28:11 [INF] Product created successfully. Id=8
+2026-07-27 18:28:11 [INF] HTTP POST /api/v1/Products responded 200 in 976.0054 ms
+2026-07-27 18:28:18 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 18:28:25 [INF] Cache MISS - Loading products from database.
+2026-07-27 18:28:28 [INF] Products stored in memory cache.
+2026-07-27 18:28:28 [INF] HTTP GET /api/v1/Products responded 200 in 9268.1019 ms
+2026-07-27 18:28:31 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 18:28:33 [INF] Cache HIT - Products loaded from memory cache.
+2026-07-27 18:28:33 [INF] HTTP GET /api/v1/Products responded 200 in 2067.1817 ms
+2026-07-27 21:52:04 [INF] HTTP GET /swagger/index.html responded 200 in 296.4405 ms
+2026-07-27 21:52:05 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 48.2718 ms
+2026-07-27 21:53:01 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 21:53:02 [INF] Cache MISS
+2026-07-27 21:53:02 [INF] HTTP GET /api/v1/Products responded 200 in 24630.6865 ms
+2026-07-27 21:53:09 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 21:53:09 [INF] Cache HIT
+2026-07-27 21:53:09 [INF] HTTP GET /api/v1/Products responded 200 in 848.9765 ms
+2026-07-27 22:09:30 [INF] HTTP GET /swagger/index.html responded 200 in 7861.5479 ms
+2026-07-27 22:09:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 4156.3057 ms
+2026-07-27 22:12:17 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 22:12:42 [INF] Cache MISS
+2026-07-27 22:12:46 [INF] Products stored in Redis successfully.
+2026-07-27 22:12:48 [INF] HTTP GET /api/v1/Products responded 200 in 145442.2811 ms
+2026-07-27 22:13:16 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-27 22:13:16 [INF] Cache HIT
+2026-07-27 22:13:17 [INF] HTTP GET /api/v1/Products responded 200 in 7882.0377 ms

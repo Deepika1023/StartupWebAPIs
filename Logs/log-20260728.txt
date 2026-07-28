@@ -1,0 +1,35 @@
+2026-07-28 10:34:46 [INF] HTTP GET /swagger/index.html responded 200 in 1108.3178 ms
+2026-07-28 10:34:54 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1063.4373 ms
+2026-07-28 10:36:36 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-28 10:36:39 [INF] Cache MISS
+2026-07-28 10:36:40 [INF] Redis Verify = SUCCESS
+2026-07-28 10:36:40 [INF] HTTP GET /api/v1/Products responded 200 in 14852.8151 ms
+2026-07-28 10:36:43 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-28 10:36:43 [INF] Cache HIT
+2026-07-28 10:36:43 [INF] HTTP GET /api/v1/Products responded 200 in 578.1541 ms
+2026-07-28 10:36:48 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-28 10:36:48 [INF] Cache HIT
+2026-07-28 10:36:48 [INF] HTTP GET /api/v1/Products responded 200 in 147.3929 ms
+2026-07-28 10:46:58 [INF] HTTP GET /swagger/index.html responded 200 in 329.4071 ms
+2026-07-28 10:46:59 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 60.0668 ms
+2026-07-28 10:47:29 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 401 in 3802.0873 ms
+2026-07-28 10:47:33 [INF] HTTP GET /swagger/index.html responded 200 in 121.6391 ms
+2026-07-28 10:47:33 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 401 in 37.8856 ms
+2026-07-28 10:47:34 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 243.1250 ms
+2026-07-28 10:47:57 [INF] HTTP GET /swagger/index.html responded 200 in 5.4282 ms
+2026-07-28 10:47:57 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 401 in 3.0291 ms
+2026-07-28 10:47:58 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 25.5130 ms
+2026-07-28 10:48:02 [INF] HTTP GET /swagger/index.html responded 200 in 2.4540 ms
+2026-07-28 10:48:02 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 401 in 1.9175 ms
+2026-07-28 10:48:03 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 22.5135 ms
+2026-07-28 10:48:17 [INF] HTTP GET /swagger/index.html responded 200 in 2.3098 ms
+2026-07-28 10:48:18 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 401 in 1.1876 ms
+2026-07-28 10:48:18 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 20.9971 ms
+2026-07-28 11:08:59 [INF] HTTP GET /swagger/index.html responded 200 in 290.4239 ms
+2026-07-28 11:08:59 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 58.6833 ms
+2026-07-28 11:09:36 [INF] Getting products. Search=null, Sort=null, MinPrice=null, MaxPrice=null, Page=1, PageSize=5
+2026-07-28 11:09:36 [INF] Cache MISS
+2026-07-28 11:09:36 [INF] Redis Verify = SUCCESS
+2026-07-28 11:09:37 [INF] HTTP GET /api/v1/Products responded 200 in 8285.8661 ms
+2026-07-28 11:10:01 [INF] HTTP GET /api/v1/Products responded 401 in 1.8861 ms
+2026-07-28 11:10:02 [INF] HTTP GET /favicon.ico responded 401 in 3.6905 ms
