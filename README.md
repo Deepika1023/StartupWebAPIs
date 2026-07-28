@@ -14,7 +14,8 @@
 ✔ Pagination
 ✔ Sorting
 ✔ Filtering
-
+Redis Distributed Cache 
+Docker
 ## Technologies
 
 - ASP.NET Core 8
