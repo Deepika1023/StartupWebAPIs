@@ -16,6 +16,9 @@
 ✔ Filtering
 Redis Distributed Cache 
 Docker
+Register the recurring job
+Real Email Service with Hangfire
+Configure SMTP Settings
 ## Technologies
 
 - ASP.NET Core 8
