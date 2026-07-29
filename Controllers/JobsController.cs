@@ -1,5 +1,6 @@
 ﻿using Hangfire;
 using Microsoft.AspNetCore.Mvc;
+using StartupWebAPIs.DTOs;
 using StartupWebAPIs.Jobs;
 
 namespace StartupWebAPIs.Controllers
@@ -9,11 +10,10 @@ namespace StartupWebAPIs.Controllers
     public class JobsController : ControllerBase
     {
         [HttpPost("welcome")]
-        public IActionResult Welcome(
-            [FromServices] IBackgroundJobClient jobClient)
+        public IActionResult Welcome([FromServices] IBackgroundJobClient jobClient, WelcomeEmailRequest request)
         {
             jobClient.Schedule<BackgroundJobs>(
-    job => job.SendWelcomeMessage("Deepika"),
+    job => job.SendWelcomeMessageAsync(request.Name, request.Email),
     TimeSpan.FromMinutes(1));
 
             return Ok("Background Job Created Successfully.");

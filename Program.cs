@@ -2,6 +2,8 @@ using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Hangfire;
+using Hangfire.PostgreSql;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
@@ -11,17 +13,16 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using StartupWebAPIs.Data;
 using StartupWebAPIs.Interfaces;
+using StartupWebAPIs.Jobs;
 using StartupWebAPIs.Mapping;
 using StartupWebAPIs.Middleware;
+using StartupWebAPIs.Models;
 using StartupWebAPIs.Repositories;
 using StartupWebAPIs.Services;
 using StartupWebAPIs.Swagger;
 using StartupWebAPIs.Validators;
 using System.Text;
-using Hangfire;
-using Hangfire.PostgreSql;
 using System.Threading.RateLimiting;
-using StartupWebAPIs.Jobs;
 
 ////Serilog
 
@@ -84,6 +85,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<BackgroundJobs>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -207,6 +209,8 @@ builder.Services.AddRateLimiter(options =>
         }, cancellationToken);
     };
 });
+builder.Services.Configure<EmailSettings>(
+    builder.Configuration.GetSection("EmailSettings"));
 var app = builder.Build();
 app.MapGet("/test-rate", () => "OK")
    .RequireRateLimiting("ApiPolicy");
@@ -246,6 +250,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseHangfireDashboard("/hangfire");
+RecurringJob.AddOrUpdate<BackgroundJobs>( 
+    "cleanup-job",
+    job => job.CleanExpiredApiKeys(),
+    Cron.Minutely);  //Register the recurring job
 
 app.MapControllers();
 

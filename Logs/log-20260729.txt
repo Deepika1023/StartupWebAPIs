@@ -1,0 +1,338 @@
+2026-07-29 11:07:35 [INF] Start installing Hangfire SQL objects...
+2026-07-29 11:07:36 [INF] Hangfire SQL objects installed.
+2026-07-29 11:07:42 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 11:07:42 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 11:07:42 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 11:07:42 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 11:07:42 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 11:07:42 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 11:07:42 [INF] Server desktop-3n6fi4h:29668:50c7a8c4 successfully announced in 34.9073 ms
+2026-07-29 11:07:42 [INF] Server desktop-3n6fi4h:29668:50c7a8c4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 11:07:42 [INF] 1 servers were removed due to timeout
+2026-07-29 11:07:43 [INF] Server desktop-3n6fi4h:29668:50c7a8c4 all the dispatchers started
+2026-07-29 11:07:55 [INF] HTTP GET /swagger/index.html responded 200 in 198.5178 ms
+2026-07-29 11:07:55 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 35.7970 ms
+2026-07-29 11:08:15 [INF] Cleaning expired API Keys at "2026-07-29T11:08:15.0277324+05:30"
+2026-07-29 11:08:33 [INF] HTTP GET /hangfire responded 200 in 5907.5542 ms
+2026-07-29 11:08:33 [INF] HTTP GET /hangfire/css-dark18240960662659 responded 200 in 198.9443 ms
+2026-07-29 11:08:33 [INF] HTTP GET /hangfire/css18240526929777 responded 200 in 199.8549 ms
+2026-07-29 11:08:33 [INF] HTTP GET /hangfire/js182401225509751 responded 200 in 223.1085 ms
+2026-07-29 11:08:36 [INF] HTTP POST /hangfire/stats responded 200 in 126.9971 ms
+2026-07-29 11:08:38 [INF] HTTP POST /hangfire/stats responded 200 in 8.2750 ms
+2026-07-29 11:08:40 [INF] HTTP POST /hangfire/stats responded 200 in 26.3156 ms
+2026-07-29 11:08:42 [INF] HTTP POST /hangfire/stats responded 200 in 61.8982 ms
+2026-07-29 11:08:44 [INF] HTTP POST /hangfire/stats responded 200 in 24.2591 ms
+2026-07-29 11:08:47 [INF] HTTP POST /hangfire/stats responded 200 in 23.3073 ms
+2026-07-29 11:08:49 [INF] HTTP POST /hangfire/stats responded 200 in 22.5714 ms
+2026-07-29 11:08:51 [INF] HTTP POST /hangfire/stats responded 200 in 30.8362 ms
+2026-07-29 11:08:53 [INF] HTTP POST /hangfire/stats responded 200 in 29.5432 ms
+2026-07-29 11:08:55 [INF] HTTP POST /hangfire/stats responded 200 in 3.3093 ms
+2026-07-29 11:08:57 [INF] HTTP POST /hangfire/stats responded 200 in 12.5733 ms
+2026-07-29 11:08:57 [INF] HTTP GET /hangfire/recurring responded 200 in 155.6642 ms
+2026-07-29 11:08:59 [INF] HTTP POST /hangfire/stats responded 200 in 5.9973 ms
+2026-07-29 11:09:00 [INF] Cleaning expired API Keys at "2026-07-29T11:09:00.2303258+05:30"
+2026-07-29 11:09:02 [INF] HTTP POST /hangfire/stats responded 200 in 4.2087 ms
+2026-07-29 11:09:04 [INF] HTTP POST /hangfire/stats responded 200 in 5.3355 ms
+2026-07-29 11:09:06 [INF] HTTP POST /hangfire/stats responded 200 in 15.1563 ms
+2026-07-29 11:09:08 [INF] HTTP POST /hangfire/stats responded 200 in 4.9765 ms
+2026-07-29 11:09:11 [INF] HTTP POST /hangfire/stats responded 200 in 13.8026 ms
+2026-07-29 11:09:14 [INF] HTTP POST /hangfire/stats responded 200 in 10.3917 ms
+2026-07-29 11:09:17 [INF] HTTP POST /hangfire/stats responded 200 in 4.3657 ms
+2026-07-29 11:09:20 [INF] HTTP POST /hangfire/stats responded 200 in 4.6211 ms
+2026-07-29 11:09:23 [INF] HTTP POST /hangfire/stats responded 200 in 10.3481 ms
+2026-07-29 11:09:26 [INF] HTTP POST /hangfire/stats responded 200 in 12.8585 ms
+2026-07-29 11:09:29 [INF] HTTP POST /hangfire/stats responded 200 in 4.8161 ms
+2026-07-29 11:09:32 [INF] HTTP POST /hangfire/stats responded 200 in 4.1154 ms
+2026-07-29 11:09:35 [INF] HTTP POST /hangfire/stats responded 200 in 6.1554 ms
+2026-07-29 11:09:41 [INF] HTTP POST /hangfire/stats responded 200 in 5.9265 ms
+2026-07-29 11:09:44 [INF] HTTP POST /hangfire/stats responded 200 in 16.8890 ms
+2026-07-29 11:09:47 [INF] HTTP POST /hangfire/stats responded 200 in 4.9474 ms
+2026-07-29 11:09:50 [INF] HTTP POST /hangfire/stats responded 200 in 33.4334 ms
+2026-07-29 11:09:53 [INF] HTTP POST /hangfire/stats responded 200 in 7.2758 ms
+2026-07-29 11:09:56 [INF] HTTP POST /hangfire/stats responded 200 in 6.0509 ms
+2026-07-29 11:09:59 [INF] HTTP POST /hangfire/stats responded 200 in 7.7365 ms
+2026-07-29 11:10:00 [INF] Cleaning expired API Keys at "2026-07-29T11:10:00.4692380+05:30"
+2026-07-29 11:10:02 [INF] HTTP POST /hangfire/stats responded 200 in 3.2674 ms
+2026-07-29 11:10:05 [INF] HTTP POST /hangfire/stats responded 200 in 68.8298 ms
+2026-07-29 11:10:08 [INF] HTTP POST /hangfire/stats responded 200 in 4.1733 ms
+2026-07-29 11:10:11 [INF] HTTP POST /hangfire/stats responded 200 in 6.6877 ms
+2026-07-29 11:10:14 [INF] HTTP POST /hangfire/stats responded 200 in 34.4321 ms
+2026-07-29 11:10:17 [INF] HTTP POST /hangfire/stats responded 200 in 6.1225 ms
+2026-07-29 11:10:20 [INF] HTTP POST /hangfire/stats responded 200 in 3.1846 ms
+2026-07-29 11:10:23 [INF] HTTP POST /hangfire/stats responded 200 in 6.1639 ms
+2026-07-29 11:10:26 [INF] HTTP POST /hangfire/stats responded 200 in 4.4779 ms
+2026-07-29 11:10:29 [INF] HTTP POST /hangfire/stats responded 200 in 4.8750 ms
+2026-07-29 11:10:32 [INF] HTTP POST /hangfire/stats responded 200 in 5.2764 ms
+2026-07-29 11:10:35 [INF] HTTP POST /hangfire/stats responded 200 in 3.6479 ms
+2026-07-29 11:10:38 [INF] HTTP POST /hangfire/stats responded 200 in 5.4638 ms
+2026-07-29 11:10:41 [INF] HTTP POST /hangfire/stats responded 200 in 17.0427 ms
+2026-07-29 11:10:44 [INF] HTTP POST /hangfire/stats responded 200 in 6.5816 ms
+2026-07-29 11:10:47 [INF] HTTP POST /hangfire/stats responded 200 in 4.0560 ms
+2026-07-29 11:10:50 [INF] HTTP POST /hangfire/stats responded 200 in 5.1206 ms
+2026-07-29 11:10:53 [INF] HTTP POST /hangfire/stats responded 200 in 4.7060 ms
+2026-07-29 11:10:56 [INF] HTTP POST /hangfire/stats responded 200 in 3.5480 ms
+2026-07-29 11:10:59 [INF] HTTP POST /hangfire/stats responded 200 in 7.2043 ms
+2026-07-29 11:11:00 [INF] Cleaning expired API Keys at "2026-07-29T11:11:00.5628905+05:30"
+2026-07-29 11:11:02 [INF] HTTP POST /hangfire/stats responded 200 in 4.1247 ms
+2026-07-29 11:11:05 [INF] HTTP POST /hangfire/stats responded 200 in 3.9406 ms
+2026-07-29 11:11:08 [INF] HTTP POST /hangfire/stats responded 200 in 6.4593 ms
+2026-07-29 11:11:11 [INF] HTTP POST /hangfire/stats responded 200 in 41.5812 ms
+2026-07-29 11:11:14 [INF] HTTP POST /hangfire/stats responded 200 in 5.9453 ms
+2026-07-29 11:11:17 [INF] HTTP POST /hangfire/stats responded 200 in 7.4007 ms
+2026-07-29 11:11:20 [INF] HTTP POST /hangfire/stats responded 200 in 13.3757 ms
+2026-07-29 11:11:23 [INF] HTTP POST /hangfire/stats responded 200 in 4.3825 ms
+2026-07-29 11:11:26 [INF] HTTP POST /hangfire/stats responded 200 in 7.4543 ms
+2026-07-29 11:11:29 [INF] HTTP POST /hangfire/stats responded 200 in 4.6752 ms
+2026-07-29 11:11:32 [INF] HTTP POST /hangfire/stats responded 200 in 6.1013 ms
+2026-07-29 11:11:35 [INF] HTTP POST /hangfire/stats responded 200 in 4.8471 ms
+2026-07-29 11:11:38 [INF] HTTP POST /hangfire/stats responded 200 in 4.4254 ms
+2026-07-29 11:11:41 [INF] HTTP POST /hangfire/stats responded 200 in 7.8843 ms
+2026-07-29 11:11:44 [INF] HTTP POST /hangfire/stats responded 200 in 3.4884 ms
+2026-07-29 11:11:47 [INF] HTTP POST /hangfire/stats responded 200 in 4.9216 ms
+2026-07-29 11:11:50 [INF] HTTP POST /hangfire/stats responded 200 in 11.2147 ms
+2026-07-29 11:11:53 [INF] HTTP POST /hangfire/stats responded 200 in 2.9232 ms
+2026-07-29 11:11:56 [INF] HTTP POST /hangfire/stats responded 200 in 9.5368 ms
+2026-07-29 11:11:59 [INF] HTTP POST /hangfire/stats responded 200 in 6.6681 ms
+2026-07-29 11:12:00 [INF] Cleaning expired API Keys at "2026-07-29T11:12:00.6518013+05:30"
+2026-07-29 11:12:01 [INF] HTTP POST /hangfire/stats responded 200 in 3.0580 ms
+2026-07-29 11:12:05 [INF] HTTP POST /hangfire/stats responded 200 in 5.0661 ms
+2026-07-29 11:12:07 [INF] HTTP POST /hangfire/stats responded 200 in 5.0238 ms
+2026-07-29 11:12:10 [INF] HTTP POST /hangfire/stats responded 200 in 6.3435 ms
+2026-07-29 11:12:13 [INF] HTTP POST /hangfire/stats responded 200 in 3.4069 ms
+2026-07-29 11:12:17 [INF] HTTP POST /hangfire/stats responded 200 in 5.5356 ms
+2026-07-29 11:12:19 [INF] HTTP POST /hangfire/stats responded 200 in 3.6960 ms
+2026-07-29 11:12:23 [INF] HTTP POST /hangfire/stats responded 200 in 7.4712 ms
+2026-07-29 11:12:26 [INF] HTTP POST /hangfire/stats responded 200 in 3.9981 ms
+2026-07-29 11:12:28 [INF] HTTP POST /hangfire/stats responded 200 in 4.0730 ms
+2026-07-29 11:12:31 [INF] HTTP POST /hangfire/stats responded 200 in 4.8595 ms
+2026-07-29 11:12:35 [INF] HTTP POST /hangfire/stats responded 200 in 14.1070 ms
+2026-07-29 11:12:38 [INF] HTTP POST /hangfire/stats responded 200 in 228.5740 ms
+2026-07-29 11:12:40 [INF] HTTP POST /hangfire/stats responded 200 in 5.4892 ms
+2026-07-29 11:12:44 [INF] HTTP POST /hangfire/stats responded 200 in 14.3505 ms
+2026-07-29 11:12:47 [INF] HTTP POST /hangfire/stats responded 200 in 10.0822 ms
+2026-07-29 11:12:50 [INF] HTTP POST /hangfire/stats responded 200 in 16.5474 ms
+2026-07-29 11:12:53 [INF] HTTP POST /hangfire/stats responded 200 in 14.9355 ms
+2026-07-29 11:12:55 [INF] HTTP POST /hangfire/stats responded 200 in 6.2083 ms
+2026-07-29 11:12:59 [INF] HTTP POST /hangfire/stats responded 200 in 7.3861 ms
+2026-07-29 11:13:00 [INF] Cleaning expired API Keys at "2026-07-29T11:13:00.7392183+05:30"
+2026-07-29 11:13:01 [INF] HTTP POST /hangfire/stats responded 200 in 3.8164 ms
+2026-07-29 11:13:05 [INF] HTTP POST /hangfire/stats responded 200 in 32.2722 ms
+2026-07-29 11:13:08 [INF] HTTP POST /hangfire/stats responded 200 in 23.7894 ms
+2026-07-29 11:13:10 [INF] HTTP POST /hangfire/stats responded 200 in 3.8405 ms
+2026-07-29 11:13:13 [INF] HTTP POST /hangfire/stats responded 200 in 7.2801 ms
+2026-07-29 11:13:16 [INF] HTTP POST /hangfire/stats responded 200 in 3.3781 ms
+2026-07-29 11:13:19 [INF] HTTP POST /hangfire/stats responded 200 in 4.5850 ms
+2026-07-29 11:13:22 [INF] HTTP POST /hangfire/stats responded 200 in 5.8899 ms
+2026-07-29 11:13:25 [INF] HTTP POST /hangfire/stats responded 200 in 6.1404 ms
+2026-07-29 11:13:28 [INF] HTTP POST /hangfire/stats responded 200 in 3.7871 ms
+2026-07-29 11:13:31 [INF] HTTP POST /hangfire/stats responded 200 in 3.9468 ms
+2026-07-29 11:13:34 [INF] HTTP POST /hangfire/stats responded 200 in 4.0106 ms
+2026-07-29 11:13:37 [INF] HTTP POST /hangfire/stats responded 200 in 3.9804 ms
+2026-07-29 11:13:40 [INF] HTTP POST /hangfire/stats responded 200 in 3.2884 ms
+2026-07-29 11:13:43 [INF] HTTP POST /hangfire/stats responded 200 in 3.1724 ms
+2026-07-29 11:13:46 [INF] HTTP POST /hangfire/stats responded 200 in 6.6872 ms
+2026-07-29 11:13:49 [INF] HTTP POST /hangfire/stats responded 200 in 2.7297 ms
+2026-07-29 11:13:52 [INF] HTTP POST /hangfire/stats responded 200 in 3.3432 ms
+2026-07-29 11:13:55 [INF] HTTP POST /hangfire/stats responded 200 in 2.6814 ms
+2026-07-29 11:13:58 [INF] HTTP POST /hangfire/stats responded 200 in 3.3474 ms
+2026-07-29 11:14:00 [INF] Cleaning expired API Keys at "2026-07-29T11:14:00.7705549+05:30"
+2026-07-29 11:14:01 [INF] HTTP POST /hangfire/stats responded 200 in 11.3085 ms
+2026-07-29 11:14:04 [INF] HTTP POST /hangfire/stats responded 200 in 3.9761 ms
+2026-07-29 11:14:08 [INF] HTTP POST /hangfire/stats responded 200 in 29.9856 ms
+2026-07-29 11:14:11 [INF] HTTP POST /hangfire/stats responded 200 in 57.9588 ms
+2026-07-29 11:14:14 [INF] HTTP POST /hangfire/stats responded 200 in 4.9221 ms
+2026-07-29 11:14:16 [INF] HTTP POST /hangfire/stats responded 200 in 10.4323 ms
+2026-07-29 11:14:19 [INF] HTTP POST /hangfire/stats responded 200 in 4.2955 ms
+2026-07-29 11:14:22 [INF] HTTP POST /hangfire/stats responded 200 in 2.9109 ms
+2026-07-29 11:14:25 [INF] HTTP POST /hangfire/stats responded 200 in 5.6960 ms
+2026-07-29 11:14:28 [INF] HTTP POST /hangfire/stats responded 200 in 2.5305 ms
+2026-07-29 11:14:31 [INF] HTTP POST /hangfire/stats responded 200 in 4.6129 ms
+2026-07-29 11:14:34 [INF] HTTP POST /hangfire/stats responded 200 in 3.0192 ms
+2026-07-29 11:14:37 [INF] HTTP POST /hangfire/stats responded 200 in 4.0003 ms
+2026-07-29 11:14:40 [INF] HTTP POST /hangfire/stats responded 200 in 3.2368 ms
+2026-07-29 11:14:43 [INF] HTTP POST /hangfire/stats responded 200 in 5.8009 ms
+2026-07-29 11:14:46 [INF] HTTP POST /hangfire/stats responded 200 in 3.8177 ms
+2026-07-29 11:14:49 [INF] HTTP POST /hangfire/stats responded 200 in 3.5462 ms
+2026-07-29 11:14:52 [INF] HTTP POST /hangfire/stats responded 200 in 3.4089 ms
+2026-07-29 11:14:55 [INF] HTTP POST /hangfire/stats responded 200 in 3.2800 ms
+2026-07-29 11:14:58 [INF] HTTP POST /hangfire/stats responded 200 in 4.3491 ms
+2026-07-29 11:15:00 [INF] Cleaning expired API Keys at "2026-07-29T11:15:00.8467895+05:30"
+2026-07-29 11:15:01 [INF] HTTP POST /hangfire/stats responded 200 in 3.6859 ms
+2026-07-29 11:15:04 [INF] HTTP POST /hangfire/stats responded 200 in 5.9605 ms
+2026-07-29 11:15:07 [INF] HTTP POST /hangfire/stats responded 200 in 6.2837 ms
+2026-07-29 11:15:10 [INF] HTTP POST /hangfire/stats responded 200 in 4.3684 ms
+2026-07-29 11:15:13 [INF] HTTP POST /hangfire/stats responded 200 in 2.5360 ms
+2026-07-29 11:15:16 [INF] HTTP POST /hangfire/stats responded 200 in 7.7356 ms
+2026-07-29 11:15:18 [INF] HTTP GET /hangfire/recurring responded 200 in 90.7937 ms
+2026-07-29 11:15:20 [INF] HTTP POST /hangfire/stats responded 200 in 3.6988 ms
+2026-07-29 11:15:22 [INF] HTTP POST /hangfire/stats responded 200 in 3.4870 ms
+2026-07-29 11:15:24 [INF] HTTP POST /hangfire/stats responded 200 in 4.0623 ms
+2026-07-29 11:15:26 [INF] HTTP POST /hangfire/stats responded 200 in 4.3610 ms
+2026-07-29 11:15:28 [INF] HTTP POST /hangfire/stats responded 200 in 3.7452 ms
+2026-07-29 11:15:30 [INF] HTTP POST /hangfire/stats responded 200 in 3.7472 ms
+2026-07-29 11:15:33 [INF] HTTP POST /hangfire/stats responded 200 in 3.6903 ms
+2026-07-29 11:15:36 [INF] HTTP POST /hangfire/stats responded 200 in 5.1277 ms
+2026-07-29 11:15:39 [INF] HTTP POST /hangfire/stats responded 200 in 3.4279 ms
+2026-07-29 11:15:42 [INF] HTTP POST /hangfire/stats responded 200 in 2.9609 ms
+2026-07-29 11:15:45 [INF] HTTP POST /hangfire/stats responded 200 in 15.5498 ms
+2026-07-29 11:15:48 [INF] HTTP POST /hangfire/stats responded 200 in 12.1896 ms
+2026-07-29 11:15:51 [INF] HTTP POST /hangfire/stats responded 200 in 10.5081 ms
+2026-07-29 11:15:54 [INF] HTTP POST /hangfire/stats responded 200 in 3.0808 ms
+2026-07-29 11:15:57 [INF] HTTP POST /hangfire/stats responded 200 in 3.0314 ms
+2026-07-29 11:16:00 [INF] HTTP POST /hangfire/stats responded 200 in 8.5260 ms
+2026-07-29 11:16:00 [INF] Cleaning expired API Keys at "2026-07-29T11:16:00.9951771+05:30"
+2026-07-29 11:16:03 [INF] HTTP POST /hangfire/stats responded 200 in 4.5450 ms
+2026-07-29 11:16:06 [INF] HTTP POST /hangfire/stats responded 200 in 6.7484 ms
+2026-07-29 11:16:09 [INF] HTTP POST /hangfire/stats responded 200 in 9.5535 ms
+2026-07-29 11:16:12 [INF] HTTP POST /hangfire/stats responded 200 in 4.8963 ms
+2026-07-29 11:16:15 [INF] HTTP POST /hangfire/stats responded 200 in 3.3173 ms
+2026-07-29 11:16:18 [INF] HTTP POST /hangfire/stats responded 200 in 3.9498 ms
+2026-07-29 11:16:21 [INF] HTTP POST /hangfire/stats responded 200 in 5.0756 ms
+2026-07-29 11:16:24 [INF] HTTP POST /hangfire/stats responded 200 in 3.9129 ms
+2026-07-29 11:16:27 [INF] HTTP POST /hangfire/stats responded 200 in 3.4937 ms
+2026-07-29 11:16:30 [INF] HTTP POST /hangfire/stats responded 200 in 6.0933 ms
+2026-07-29 11:16:33 [INF] HTTP POST /hangfire/stats responded 200 in 14.2546 ms
+2026-07-29 11:16:36 [INF] HTTP POST /hangfire/stats responded 200 in 3.3415 ms
+2026-07-29 11:16:39 [INF] HTTP POST /hangfire/stats responded 200 in 4.5710 ms
+2026-07-29 11:16:42 [INF] HTTP POST /hangfire/stats responded 200 in 2.4127 ms
+2026-07-29 11:16:45 [INF] HTTP POST /hangfire/stats responded 200 in 4.0901 ms
+2026-07-29 11:16:48 [INF] HTTP POST /hangfire/stats responded 200 in 4.0005 ms
+2026-07-29 11:16:51 [INF] HTTP POST /hangfire/stats responded 200 in 9.4256 ms
+2026-07-29 11:16:54 [INF] HTTP POST /hangfire/stats responded 200 in 3.6175 ms
+2026-07-29 11:16:57 [INF] HTTP POST /hangfire/stats responded 200 in 5.2022 ms
+2026-07-29 11:17:00 [INF] HTTP POST /hangfire/stats responded 200 in 5.5921 ms
+2026-07-29 11:17:01 [INF] Cleaning expired API Keys at "2026-07-29T11:17:01.1483553+05:30"
+2026-07-29 11:17:03 [INF] HTTP POST /hangfire/stats responded 200 in 6.3106 ms
+2026-07-29 11:17:06 [INF] HTTP POST /hangfire/stats responded 200 in 5.4318 ms
+2026-07-29 11:17:09 [INF] HTTP POST /hangfire/stats responded 200 in 4.7326 ms
+2026-07-29 11:17:12 [INF] HTTP POST /hangfire/stats responded 200 in 4.4866 ms
+2026-07-29 11:17:15 [INF] HTTP POST /hangfire/stats responded 200 in 4.3958 ms
+2026-07-29 11:17:18 [INF] HTTP POST /hangfire/stats responded 200 in 3.3755 ms
+2026-07-29 11:17:21 [INF] HTTP POST /hangfire/stats responded 200 in 7.8687 ms
+2026-07-29 11:17:24 [INF] HTTP POST /hangfire/stats responded 200 in 5.3034 ms
+2026-07-29 11:17:27 [INF] HTTP POST /hangfire/stats responded 200 in 2.9566 ms
+2026-07-29 11:17:30 [INF] HTTP POST /hangfire/stats responded 200 in 4.2820 ms
+2026-07-29 11:17:33 [INF] HTTP POST /hangfire/stats responded 200 in 3.6329 ms
+2026-07-29 11:17:36 [INF] HTTP POST /hangfire/stats responded 200 in 6.5100 ms
+2026-07-29 11:17:40 [INF] HTTP POST /hangfire/stats responded 200 in 141.1601 ms
+2026-07-29 11:17:42 [INF] HTTP POST /hangfire/stats responded 200 in 2.8691 ms
+2026-07-29 11:17:45 [INF] HTTP POST /hangfire/stats responded 200 in 9.8018 ms
+2026-07-29 11:17:48 [INF] HTTP POST /hangfire/stats responded 200 in 16.7800 ms
+2026-07-29 11:17:51 [INF] HTTP POST /hangfire/stats responded 200 in 14.1629 ms
+2026-07-29 11:17:54 [INF] HTTP POST /hangfire/stats responded 200 in 7.6053 ms
+2026-07-29 11:17:57 [INF] HTTP POST /hangfire/stats responded 200 in 10.2791 ms
+2026-07-29 11:18:00 [INF] HTTP POST /hangfire/stats responded 200 in 5.5684 ms
+2026-07-29 11:18:01 [INF] Cleaning expired API Keys at "2026-07-29T11:18:01.2438195+05:30"
+2026-07-29 11:18:03 [INF] HTTP POST /hangfire/stats responded 200 in 9.0492 ms
+2026-07-29 11:18:06 [INF] HTTP POST /hangfire/stats responded 200 in 7.4795 ms
+2026-07-29 11:18:09 [INF] HTTP POST /hangfire/stats responded 200 in 5.0485 ms
+2026-07-29 11:59:54 [INF] Start installing Hangfire SQL objects...
+2026-07-29 11:59:54 [INF] Hangfire SQL objects installed.
+2026-07-29 12:00:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 12:00:00 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 12:00:00 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 12:00:00 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 12:00:00 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 12:00:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 12:00:00 [INF] Server desktop-3n6fi4h:33384:f0add923 successfully announced in 193.9423 ms
+2026-07-29 12:00:00 [INF] Server desktop-3n6fi4h:33384:f0add923 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 12:00:00 [INF] 1 servers were removed due to timeout
+2026-07-29 12:00:01 [INF] Server desktop-3n6fi4h:33384:f0add923 all the dispatchers started
+2026-07-29 12:00:02 [INF] Cleaning expired API Keys at "2026-07-29T12:00:02.1605760+05:30"
+2026-07-29 12:00:04 [INF] HTTP GET /swagger/index.html responded 200 in 266.7199 ms
+2026-07-29 12:00:08 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 101.3441 ms
+2026-07-29 12:00:56 [INF] HTTP POST /api/jobs/welcome responded 401 in 1687.2628 ms
+2026-07-29 12:01:02 [INF] Cleaning expired API Keys at "2026-07-29T12:01:02.4460677+05:30"
+2026-07-29 12:01:26 [INF] HTTP POST /api/jobs/welcome responded 200 in 12072.1982 ms
+2026-07-29 12:01:54 [INF] HTTP GET /hangfire responded 200 in 779.3462 ms
+2026-07-29 12:01:54 [INF] HTTP GET /hangfire/css-dark182401215762518 responded 200 in 153.7465 ms
+2026-07-29 12:01:54 [INF] HTTP GET /hangfire/css182401213409373 responded 200 in 169.4330 ms
+2026-07-29 12:01:54 [INF] HTTP GET /hangfire/js18240427470750 responded 200 in 208.9353 ms
+2026-07-29 12:01:57 [INF] HTTP POST /hangfire/stats responded 200 in 105.7267 ms
+2026-07-29 12:01:59 [INF] HTTP POST /hangfire/stats responded 200 in 38.4508 ms
+2026-07-29 12:01:59 [INF] HTTP GET /hangfire/jobs/enqueued responded 200 in 84.9157 ms
+2026-07-29 12:02:01 [INF] HTTP POST /hangfire/stats responded 200 in 35.6289 ms
+2026-07-29 12:02:02 [INF] Cleaning expired API Keys at "2026-07-29T12:02:02.6032771+05:30"
+2026-07-29 12:02:02 [INF] HTTP GET /hangfire/jobs/scheduled responded 200 in 193.4089 ms
+2026-07-29 12:02:04 [INF] HTTP POST /hangfire/stats responded 200 in 30.8272 ms
+2026-07-29 12:02:06 [INF] HTTP POST /hangfire/stats responded 200 in 10.1817 ms
+2026-07-29 12:02:08 [INF] HTTP POST /hangfire/stats responded 200 in 12.4646 ms
+2026-07-29 12:02:11 [INF] HTTP POST /hangfire/stats responded 200 in 21.1685 ms
+2026-07-29 12:02:14 [INF] HTTP POST /hangfire/stats responded 200 in 40.1018 ms
+2026-07-29 12:02:17 [INF] HTTP POST /hangfire/stats responded 200 in 6.5646 ms
+2026-07-29 12:02:20 [INF] HTTP POST /hangfire/stats responded 200 in 59.9363 ms
+2026-07-29 12:02:23 [INF] HTTP POST /hangfire/stats responded 200 in 84.4063 ms
+2026-07-29 12:02:26 [INF] HTTP POST /hangfire/stats responded 200 in 26.7410 ms
+2026-07-29 12:02:29 [INF] HTTP POST /hangfire/stats responded 200 in 14.4888 ms
+2026-07-29 12:02:32 [INF] HTTP POST /hangfire/stats responded 200 in 6.3203 ms
+2026-07-29 12:02:33 [INF] Welcome email sent to Deepika at "2026-07-29T12:02:33.2761942+05:30"
+2026-07-29 12:02:35 [INF] HTTP POST /hangfire/stats responded 200 in 20.5408 ms
+2026-07-29 12:02:38 [INF] Welcome email sent successfully to shukladeepika1023@gmail.com
+2026-07-29 12:02:38 [INF] HTTP POST /hangfire/stats responded 200 in 15.0874 ms
+2026-07-29 12:02:41 [INF] HTTP POST /hangfire/stats responded 200 in 6.9502 ms
+2026-07-29 12:02:44 [INF] HTTP POST /hangfire/stats responded 200 in 66.5767 ms
+2026-07-29 12:02:47 [INF] HTTP POST /hangfire/stats responded 200 in 8.3355 ms
+2026-07-29 12:02:50 [INF] HTTP POST /hangfire/stats responded 200 in 359.4960 ms
+2026-07-29 12:02:53 [INF] HTTP POST /hangfire/stats responded 200 in 38.4633 ms
+2026-07-29 12:02:56 [INF] HTTP POST /hangfire/stats responded 200 in 23.4514 ms
+2026-07-29 12:02:59 [INF] HTTP POST /hangfire/stats responded 200 in 38.7869 ms
+2026-07-29 12:03:02 [INF] HTTP POST /hangfire/stats responded 200 in 70.0261 ms
+2026-07-29 12:03:03 [INF] Cleaning expired API Keys at "2026-07-29T12:03:03.6786629+05:30"
+2026-07-29 12:03:05 [INF] HTTP POST /hangfire/stats responded 200 in 7.5992 ms
+2026-07-29 12:03:08 [INF] HTTP POST /hangfire/stats responded 200 in 8.9946 ms
+2026-07-29 12:03:11 [INF] HTTP POST /hangfire/stats responded 200 in 19.8041 ms
+2026-07-29 12:03:14 [INF] HTTP POST /hangfire/stats responded 200 in 14.0849 ms
+2026-07-29 12:03:17 [INF] HTTP POST /hangfire/stats responded 200 in 8.0446 ms
+2026-07-29 12:03:20 [INF] HTTP POST /hangfire/stats responded 200 in 7.6223 ms
+2026-07-29 12:03:23 [INF] HTTP POST /hangfire/stats responded 200 in 34.5894 ms
+2026-07-29 12:03:26 [INF] HTTP POST /hangfire/stats responded 200 in 7.0144 ms
+2026-07-29 12:03:29 [INF] HTTP POST /hangfire/stats responded 200 in 6.1600 ms
+2026-07-29 12:03:32 [INF] HTTP POST /hangfire/stats responded 200 in 4.6731 ms
+2026-07-29 12:03:35 [INF] HTTP POST /hangfire/stats responded 200 in 4.2089 ms
+2026-07-29 12:03:38 [INF] HTTP POST /hangfire/stats responded 200 in 19.6532 ms
+2026-07-29 12:03:41 [INF] HTTP POST /hangfire/stats responded 200 in 6.1343 ms
+2026-07-29 12:03:44 [INF] HTTP POST /hangfire/stats responded 200 in 7.2527 ms
+2026-07-29 12:03:47 [INF] HTTP POST /hangfire/stats responded 200 in 4.0612 ms
+2026-07-29 12:03:50 [INF] HTTP POST /hangfire/stats responded 200 in 6.7114 ms
+2026-07-29 12:03:53 [INF] HTTP POST /hangfire/stats responded 200 in 10.0796 ms
+2026-07-29 12:03:56 [INF] HTTP POST /hangfire/stats responded 200 in 5.2316 ms
+2026-07-29 12:03:59 [INF] HTTP POST /hangfire/stats responded 200 in 11.4573 ms
+2026-07-29 12:04:02 [INF] HTTP POST /hangfire/stats responded 200 in 22.6789 ms
+2026-07-29 12:04:04 [INF] Cleaning expired API Keys at "2026-07-29T12:04:04.0309193+05:30"
+2026-07-29 12:04:05 [INF] HTTP POST /hangfire/stats responded 200 in 11.0647 ms
+2026-07-29 12:04:08 [INF] HTTP POST /hangfire/stats responded 200 in 22.0765 ms
+2026-07-29 12:04:11 [INF] HTTP POST /hangfire/stats responded 200 in 12.0759 ms
+2026-07-29 12:04:14 [INF] HTTP POST /hangfire/stats responded 200 in 25.3435 ms
+2026-07-29 12:04:17 [INF] HTTP POST /hangfire/stats responded 200 in 26.2899 ms
+2026-07-29 12:04:20 [INF] HTTP POST /hangfire/stats responded 200 in 233.7313 ms
+2026-07-29 12:04:23 [INF] HTTP POST /hangfire/stats responded 200 in 82.4641 ms
+2026-07-29 12:04:26 [INF] HTTP POST /hangfire/stats responded 200 in 12.2267 ms
+2026-07-29 12:04:29 [INF] HTTP POST /hangfire/stats responded 200 in 12.9732 ms
+2026-07-29 12:04:32 [INF] HTTP POST /hangfire/stats responded 200 in 8.2227 ms
+2026-07-29 12:04:35 [INF] HTTP POST /hangfire/stats responded 200 in 9.3840 ms
+2026-07-29 12:04:38 [INF] HTTP POST /hangfire/stats responded 200 in 20.9662 ms
+2026-07-29 12:04:41 [INF] HTTP POST /hangfire/stats responded 200 in 6.9886 ms
+2026-07-29 12:04:44 [INF] HTTP POST /hangfire/stats responded 200 in 7.1695 ms
+2026-07-29 12:04:47 [INF] HTTP POST /hangfire/stats responded 200 in 7.4171 ms
+2026-07-29 12:04:50 [INF] HTTP POST /hangfire/stats responded 200 in 6.7475 ms
+2026-07-29 12:04:53 [INF] HTTP POST /hangfire/stats responded 200 in 10.9829 ms
+2026-07-29 12:04:57 [INF] HTTP POST /hangfire/stats responded 200 in 618.3973 ms
+2026-07-29 12:04:59 [INF] HTTP POST /hangfire/stats responded 200 in 17.9316 ms
+2026-07-29 12:05:02 [INF] HTTP POST /hangfire/stats responded 200 in 14.5132 ms
+2026-07-29 12:05:04 [INF] Cleaning expired API Keys at "2026-07-29T12:05:04.3572846+05:30"
+2026-07-29 12:05:05 [INF] HTTP POST /hangfire/stats responded 200 in 30.1957 ms
+2026-07-29 12:05:08 [INF] HTTP POST /hangfire/stats responded 200 in 27.4125 ms
+2026-07-29 12:05:11 [INF] HTTP POST /hangfire/stats responded 200 in 13.0069 ms
+2026-07-29 12:05:14 [INF] HTTP POST /hangfire/stats responded 200 in 14.1823 ms
+2026-07-29 12:05:17 [INF] HTTP POST /hangfire/stats responded 200 in 13.0592 ms
+2026-07-29 12:05:20 [INF] HTTP POST /hangfire/stats responded 200 in 5.4814 ms
+2026-07-29 12:05:23 [INF] HTTP POST /hangfire/stats responded 200 in 7.7178 ms
+2026-07-29 12:05:26 [INF] HTTP POST /hangfire/stats responded 200 in 30.3103 ms
