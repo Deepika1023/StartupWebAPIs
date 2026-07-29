@@ -336,3 +336,701 @@
 2026-07-29 12:05:20 [INF] HTTP POST /hangfire/stats responded 200 in 5.4814 ms
 2026-07-29 12:05:23 [INF] HTTP POST /hangfire/stats responded 200 in 7.7178 ms
 2026-07-29 12:05:26 [INF] HTTP POST /hangfire/stats responded 200 in 30.3103 ms
+2026-07-29 14:15:11 [INF] Start installing Hangfire SQL objects...
+2026-07-29 14:15:11 [INF] Hangfire SQL objects installed.
+2026-07-29 14:15:14 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 14:15:14 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 14:15:14 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 14:15:14 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 14:15:14 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 14:15:14 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 14:15:14 [INF] Server desktop-3n6fi4h:32688:6a598981 successfully announced in 52.7145 ms
+2026-07-29 14:15:14 [INF] Server desktop-3n6fi4h:32688:6a598981 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 14:15:14 [INF] 1 servers were removed due to timeout
+2026-07-29 14:15:17 [INF] Server desktop-3n6fi4h:32688:6a598981 all the dispatchers started
+2026-07-29 14:15:17 [INF] Cleaning expired API Keys at "2026-07-29T14:15:17.8491600+05:30"
+2026-07-29 14:15:17 [INF] HTTP GET /swagger/index.html responded 200 in 188.3046 ms
+2026-07-29 14:15:18 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 29.7591 ms
+2026-07-29 14:15:50 [INF] Starting PDF report generation...
+2026-07-29 14:15:50 [INF] HTTP POST /api/reports/products/pdf responded 200 in 5298.7398 ms
+2026-07-29 14:15:53 [INF] PDF report generated successfully: D:\UserRepo\StartupWebAPIs\Reports\PDF\Products_20260729_141551.pdf
+2026-07-29 14:16:03 [INF] Cleaning expired API Keys at "2026-07-29T14:16:03.3645948+05:30"
+2026-07-29 14:16:30 [INF] HTTP GET /hangfire responded 200 in 920.9427 ms
+2026-07-29 14:16:30 [INF] HTTP GET /hangfire/css-dark182402133646244 responded 200 in 168.9008 ms
+2026-07-29 14:16:30 [INF] HTTP GET /hangfire/css18240941448180 responded 200 in 183.1594 ms
+2026-07-29 14:16:30 [INF] HTTP GET /hangfire/js182401508510856 responded 200 in 210.8298 ms
+2026-07-29 14:16:32 [INF] HTTP POST /hangfire/stats responded 200 in 167.4635 ms
+2026-07-29 14:16:34 [INF] HTTP GET /hangfire/recurring responded 200 in 315.7490 ms
+2026-07-29 14:16:36 [INF] HTTP POST /hangfire/stats responded 200 in 43.7696 ms
+2026-07-29 14:16:38 [INF] HTTP POST /hangfire/stats responded 200 in 28.3787 ms
+2026-07-29 14:16:39 [INF] HTTP GET /hangfire/servers responded 200 in 432.2374 ms
+2026-07-29 14:16:41 [INF] HTTP POST /hangfire/stats responded 200 in 18.2970 ms
+2026-07-29 14:16:43 [INF] HTTP POST /hangfire/stats responded 200 in 19.3100 ms
+2026-07-29 14:16:46 [INF] HTTP POST /hangfire/stats responded 200 in 35.5508 ms
+2026-07-29 14:16:49 [INF] HTTP POST /hangfire/stats responded 200 in 34.0173 ms
+2026-07-29 14:16:52 [INF] HTTP POST /hangfire/stats responded 200 in 21.2448 ms
+2026-07-29 14:16:55 [INF] HTTP POST /hangfire/stats responded 200 in 5.5009 ms
+2026-07-29 14:16:58 [INF] HTTP POST /hangfire/stats responded 200 in 33.3685 ms
+2026-07-29 14:17:01 [INF] HTTP POST /hangfire/stats responded 200 in 4.9355 ms
+2026-07-29 14:17:03 [INF] Cleaning expired API Keys at "2026-07-29T14:17:03.5512170+05:30"
+2026-07-29 14:17:04 [INF] HTTP POST /hangfire/stats responded 200 in 21.3401 ms
+2026-07-29 14:17:07 [INF] HTTP POST /hangfire/stats responded 200 in 5.6943 ms
+2026-07-29 14:17:09 [INF] HTTP POST /hangfire/stats responded 200 in 16.4760 ms
+2026-07-29 14:17:11 [INF] HTTP POST /hangfire/stats responded 200 in 10.8533 ms
+2026-07-29 14:17:12 [INF] HTTP GET /hangfire/recurring responded 200 in 38.9805 ms
+2026-07-29 14:17:15 [INF] HTTP POST /hangfire/stats responded 200 in 15.9941 ms
+2026-07-29 14:17:17 [INF] HTTP POST /hangfire/stats responded 200 in 12.9803 ms
+2026-07-29 14:17:19 [INF] HTTP POST /hangfire/stats responded 200 in 3.7517 ms
+2026-07-29 14:17:21 [INF] HTTP POST /hangfire/stats responded 200 in 7.4796 ms
+2026-07-29 14:17:23 [INF] HTTP POST /hangfire/stats responded 200 in 10.8054 ms
+2026-07-29 14:17:25 [INF] HTTP POST /hangfire/stats responded 200 in 11.6653 ms
+2026-07-29 14:17:27 [INF] HTTP POST /hangfire/stats responded 200 in 16.1884 ms
+2026-07-29 14:17:29 [INF] HTTP POST /hangfire/stats responded 200 in 13.5249 ms
+2026-07-29 14:17:31 [INF] HTTP POST /hangfire/stats responded 200 in 6.1326 ms
+2026-07-29 14:17:33 [INF] HTTP POST /hangfire/stats responded 200 in 5.7013 ms
+2026-07-29 14:17:35 [INF] HTTP POST /hangfire/stats responded 200 in 6.1818 ms
+2026-07-29 14:17:37 [INF] HTTP POST /hangfire/stats responded 200 in 15.3728 ms
+2026-07-29 14:17:39 [INF] HTTP POST /hangfire/stats responded 200 in 4.9931 ms
+2026-07-29 14:17:41 [INF] HTTP POST /hangfire/stats responded 200 in 3.3398 ms
+2026-07-29 14:17:44 [INF] HTTP POST /hangfire/stats responded 200 in 6.0572 ms
+2026-07-29 14:17:47 [INF] HTTP POST /hangfire/stats responded 200 in 5.7004 ms
+2026-07-29 14:17:50 [INF] HTTP POST /hangfire/stats responded 200 in 79.1140 ms
+2026-07-29 14:17:53 [INF] HTTP POST /hangfire/stats responded 200 in 9.2617 ms
+2026-07-29 14:17:55 [INF] HTTP POST /hangfire/stats responded 200 in 8.9979 ms
+2026-07-29 14:17:57 [INF] HTTP POST /hangfire/stats responded 200 in 11.3970 ms
+2026-07-29 14:17:59 [INF] HTTP POST /hangfire/stats responded 200 in 3.5583 ms
+2026-07-29 14:18:01 [INF] HTTP POST /hangfire/stats responded 200 in 5.9049 ms
+2026-07-29 14:18:03 [INF] Cleaning expired API Keys at "2026-07-29T14:18:03.5976084+05:30"
+2026-07-29 14:18:04 [INF] HTTP POST /hangfire/stats responded 200 in 7.5530 ms
+2026-07-29 14:18:06 [INF] HTTP POST /hangfire/stats responded 200 in 5.1747 ms
+2026-07-29 14:18:08 [INF] HTTP POST /hangfire/stats responded 200 in 7.9695 ms
+2026-07-29 14:18:09 [INF] HTTP GET /hangfire responded 200 in 22.6217 ms
+2026-07-29 14:18:11 [INF] HTTP POST /hangfire/stats responded 200 in 5.5007 ms
+2026-07-29 14:18:13 [INF] HTTP POST /hangfire/stats responded 200 in 7.2458 ms
+2026-07-29 14:18:15 [INF] HTTP POST /hangfire/stats responded 200 in 7.0690 ms
+2026-07-29 14:18:17 [INF] HTTP GET /hangfire/jobs/enqueued responded 200 in 81.8567 ms
+2026-07-29 14:18:19 [INF] HTTP POST /hangfire/stats responded 200 in 4.6737 ms
+2026-07-29 14:18:20 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 177.8065 ms
+2026-07-29 14:18:22 [INF] HTTP POST /hangfire/stats responded 200 in 10.9355 ms
+2026-07-29 14:18:24 [INF] HTTP POST /hangfire/stats responded 200 in 4.0111 ms
+2026-07-29 14:18:27 [INF] HTTP POST /hangfire/stats responded 200 in 15.1834 ms
+2026-07-29 14:18:27 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 34.5659 ms
+2026-07-29 14:18:29 [INF] HTTP POST /hangfire/stats responded 200 in 6.1819 ms
+2026-07-29 14:18:31 [INF] HTTP POST /hangfire/stats responded 200 in 4.3279 ms
+2026-07-29 14:18:33 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 30.7354 ms
+2026-07-29 14:18:35 [INF] HTTP POST /hangfire/stats responded 200 in 29.7388 ms
+2026-07-29 14:18:37 [INF] HTTP POST /hangfire/stats responded 200 in 5.8205 ms
+2026-07-29 14:18:39 [INF] HTTP POST /hangfire/stats responded 200 in 8.6639 ms
+2026-07-29 14:18:41 [INF] HTTP POST /hangfire/stats responded 200 in 11.4127 ms
+2026-07-29 14:18:43 [INF] HTTP POST /hangfire/stats responded 200 in 6.3541 ms
+2026-07-29 14:18:45 [INF] HTTP POST /hangfire/stats responded 200 in 31.9494 ms
+2026-07-29 14:18:47 [INF] HTTP GET /hangfire/jobs/details/22 responded 200 in 215.9678 ms
+2026-07-29 14:18:49 [INF] HTTP POST /hangfire/stats responded 200 in 4.5136 ms
+2026-07-29 14:18:52 [INF] HTTP POST /hangfire/stats responded 200 in 7.8108 ms
+2026-07-29 14:18:55 [INF] HTTP POST /hangfire/stats responded 200 in 5.2132 ms
+2026-07-29 14:18:58 [INF] HTTP POST /hangfire/stats responded 200 in 27.5312 ms
+2026-07-29 14:19:01 [INF] HTTP POST /hangfire/stats responded 200 in 10.8268 ms
+2026-07-29 14:19:03 [INF] HTTP POST /hangfire/stats responded 200 in 24.1432 ms
+2026-07-29 14:19:03 [INF] Cleaning expired API Keys at "2026-07-29T14:19:03.9192580+05:30"
+2026-07-29 14:19:05 [INF] HTTP POST /hangfire/stats responded 200 in 6.5626 ms
+2026-07-29 14:19:07 [INF] HTTP POST /hangfire/stats responded 200 in 6.9094 ms
+2026-07-29 14:19:09 [INF] HTTP POST /hangfire/stats responded 200 in 3.5901 ms
+2026-07-29 14:19:11 [INF] HTTP POST /hangfire/stats responded 200 in 5.7659 ms
+2026-07-29 14:19:13 [INF] HTTP POST /hangfire/stats responded 200 in 8.9949 ms
+2026-07-29 14:19:16 [INF] HTTP POST /hangfire/stats responded 200 in 3.7052 ms
+2026-07-29 14:19:19 [INF] HTTP POST /hangfire/stats responded 200 in 6.1310 ms
+2026-07-29 14:19:22 [INF] HTTP POST /hangfire/stats responded 200 in 15.5280 ms
+2026-07-29 14:19:25 [INF] HTTP POST /hangfire/stats responded 200 in 9.5757 ms
+2026-07-29 14:19:28 [INF] HTTP POST /hangfire/stats responded 200 in 24.0197 ms
+2026-07-29 14:19:31 [INF] HTTP POST /hangfire/stats responded 200 in 14.2928 ms
+2026-07-29 14:19:34 [INF] HTTP POST /hangfire/stats responded 200 in 3.5679 ms
+2026-07-29 14:19:37 [INF] HTTP POST /hangfire/stats responded 200 in 6.2655 ms
+2026-07-29 14:19:40 [INF] HTTP POST /hangfire/stats responded 200 in 35.0088 ms
+2026-07-29 14:19:43 [INF] HTTP POST /hangfire/stats responded 200 in 6.0313 ms
+2026-07-29 14:19:46 [INF] HTTP POST /hangfire/stats responded 200 in 7.0920 ms
+2026-07-29 14:19:49 [INF] HTTP POST /hangfire/stats responded 200 in 5.6990 ms
+2026-07-29 14:19:52 [INF] HTTP POST /hangfire/stats responded 200 in 20.0933 ms
+2026-07-29 14:19:55 [INF] HTTP POST /hangfire/stats responded 200 in 154.7829 ms
+2026-07-29 14:19:58 [INF] HTTP POST /hangfire/stats responded 200 in 6.0657 ms
+2026-07-29 14:20:01 [INF] HTTP POST /hangfire/stats responded 200 in 8.5115 ms
+2026-07-29 14:20:04 [INF] HTTP POST /hangfire/stats responded 200 in 25.7365 ms
+2026-07-29 14:20:05 [INF] Cleaning expired API Keys at "2026-07-29T14:20:05.1966508+05:30"
+2026-07-29 14:20:07 [INF] HTTP POST /hangfire/stats responded 200 in 11.4270 ms
+2026-07-29 14:20:10 [INF] HTTP POST /hangfire/stats responded 200 in 6.2803 ms
+2026-07-29 14:20:13 [INF] HTTP POST /hangfire/stats responded 200 in 236.3642 ms
+2026-07-29 14:20:16 [INF] HTTP POST /hangfire/stats responded 200 in 25.2823 ms
+2026-07-29 14:20:19 [INF] HTTP POST /hangfire/stats responded 200 in 16.3789 ms
+2026-07-29 14:20:22 [INF] HTTP POST /hangfire/stats responded 200 in 13.9590 ms
+2026-07-29 14:20:25 [INF] HTTP POST /hangfire/stats responded 200 in 6.2486 ms
+2026-07-29 14:20:28 [INF] HTTP POST /hangfire/stats responded 200 in 25.2381 ms
+2026-07-29 14:20:31 [INF] HTTP POST /hangfire/stats responded 200 in 10.3628 ms
+2026-07-29 14:20:34 [INF] HTTP POST /hangfire/stats responded 200 in 5.4385 ms
+2026-07-29 14:20:37 [INF] HTTP POST /hangfire/stats responded 200 in 19.1097 ms
+2026-07-29 14:20:40 [INF] HTTP POST /hangfire/stats responded 200 in 4.9524 ms
+2026-07-29 14:20:43 [INF] HTTP POST /hangfire/stats responded 200 in 27.5846 ms
+2026-07-29 14:20:46 [INF] HTTP POST /hangfire/stats responded 200 in 4.0177 ms
+2026-07-29 14:20:49 [INF] HTTP POST /hangfire/stats responded 200 in 12.4245 ms
+2026-07-29 14:20:52 [INF] HTTP POST /hangfire/stats responded 200 in 5.8402 ms
+2026-07-29 14:20:55 [INF] HTTP POST /hangfire/stats responded 200 in 5.1641 ms
+2026-07-29 14:20:58 [INF] HTTP POST /hangfire/stats responded 200 in 18.3531 ms
+2026-07-29 14:21:01 [INF] HTTP POST /hangfire/stats responded 200 in 4.3951 ms
+2026-07-29 14:21:04 [INF] HTTP POST /hangfire/stats responded 200 in 5.8010 ms
+2026-07-29 14:21:05 [INF] Cleaning expired API Keys at "2026-07-29T14:21:05.3878073+05:30"
+2026-07-29 14:21:07 [INF] HTTP POST /hangfire/stats responded 200 in 5.0640 ms
+2026-07-29 14:21:10 [INF] HTTP POST /hangfire/stats responded 200 in 6.0058 ms
+2026-07-29 14:21:13 [INF] HTTP POST /hangfire/stats responded 200 in 3.8719 ms
+2026-07-29 14:21:16 [INF] HTTP POST /hangfire/stats responded 200 in 5.6300 ms
+2026-07-29 14:21:19 [INF] HTTP POST /hangfire/stats responded 200 in 12.2977 ms
+2026-07-29 14:21:22 [INF] HTTP POST /hangfire/stats responded 200 in 2.7606 ms
+2026-07-29 14:21:25 [INF] HTTP POST /hangfire/stats responded 200 in 3.5513 ms
+2026-07-29 14:21:28 [INF] HTTP POST /hangfire/stats responded 200 in 3.1496 ms
+2026-07-29 14:21:31 [INF] HTTP POST /hangfire/stats responded 200 in 3.1861 ms
+2026-07-29 14:21:34 [INF] HTTP POST /hangfire/stats responded 200 in 3.3686 ms
+2026-07-29 14:21:37 [INF] HTTP POST /hangfire/stats responded 200 in 3.5394 ms
+2026-07-29 14:21:40 [INF] HTTP POST /hangfire/stats responded 200 in 3.7339 ms
+2026-07-29 14:21:43 [INF] HTTP POST /hangfire/stats responded 200 in 4.0061 ms
+2026-07-29 14:21:46 [INF] HTTP POST /hangfire/stats responded 200 in 4.6712 ms
+2026-07-29 14:21:49 [INF] HTTP POST /hangfire/stats responded 200 in 21.4143 ms
+2026-07-29 14:21:52 [INF] HTTP POST /hangfire/stats responded 200 in 5.2634 ms
+2026-07-29 14:21:55 [INF] HTTP POST /hangfire/stats responded 200 in 4.7423 ms
+2026-07-29 14:21:58 [INF] HTTP POST /hangfire/stats responded 200 in 4.3398 ms
+2026-07-29 14:22:01 [INF] HTTP POST /hangfire/stats responded 200 in 5.8468 ms
+2026-07-29 14:22:04 [INF] HTTP POST /hangfire/stats responded 200 in 21.1292 ms
+2026-07-29 14:22:05 [INF] Cleaning expired API Keys at "2026-07-29T14:22:05.5229104+05:30"
+2026-07-29 14:22:07 [INF] HTTP POST /hangfire/stats responded 200 in 5.9171 ms
+2026-07-29 14:22:10 [INF] HTTP POST /hangfire/stats responded 200 in 5.5652 ms
+2026-07-29 14:22:13 [INF] HTTP POST /hangfire/stats responded 200 in 5.8579 ms
+2026-07-29 14:22:16 [INF] HTTP POST /hangfire/stats responded 200 in 3.2385 ms
+2026-07-29 14:22:19 [INF] HTTP POST /hangfire/stats responded 200 in 6.6284 ms
+2026-07-29 14:23:03 [INF] Start installing Hangfire SQL objects...
+2026-07-29 14:23:04 [INF] Hangfire SQL objects installed.
+2026-07-29 14:23:08 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 14:23:08 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 14:23:08 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 14:23:08 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 14:23:08 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 14:23:08 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 14:23:08 [INF] Server desktop-3n6fi4h:29324:83dbbe8b successfully announced in 265.5971 ms
+2026-07-29 14:23:08 [INF] Server desktop-3n6fi4h:29324:83dbbe8b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 14:23:10 [INF] Server desktop-3n6fi4h:29324:83dbbe8b all the dispatchers started
+2026-07-29 14:23:12 [INF] Cleaning expired API Keys at "2026-07-29T14:23:12.2373024+05:30"
+2026-07-29 14:23:12 [INF] HTTP GET /swagger/index.html responded 200 in 325.3606 ms
+2026-07-29 14:23:13 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 49.1119 ms
+2026-07-29 14:24:14 [INF] Cleaning expired API Keys at "2026-07-29T14:24:14.6366839+05:30"
+2026-07-29 14:25:07 [INF] HTTP GET /api/reports/download/Products_20260729_121530.pdf responded 404 in 3448.9948 ms
+2026-07-29 14:25:14 [INF] Cleaning expired API Keys at "2026-07-29T14:25:14.4059496+05:30"
+2026-07-29 14:25:46 [INF] HTTP GET /api/reports/download/file:%2F%2F%2FD:%2FUserRepo%2FStartupWebAPIs%2FReports%2FPDF%2FProducts_20260729_141551.pdf responded 404 in 617.6277 ms
+2026-07-29 14:25:55 [INF] HTTP GET /api/reports/download/Products_20260729_141551.pdf responded 200 in 281.7897 ms
+2026-07-29 14:25:57 [INF] HTTP GET /api/reports/download/Products_20260729_141551.pdf responded 200 in 22.8934 ms
+2026-07-29 14:26:14 [INF] Cleaning expired API Keys at "2026-07-29T14:26:14.5415728+05:30"
+2026-07-29 14:27:15 [INF] Cleaning expired API Keys at "2026-07-29T14:27:15.3783813+05:30"
+2026-07-29 14:28:00 [INF] Cleaning expired API Keys at "2026-07-29T14:28:00.4971357+05:30"
+2026-07-29 14:28:08 [INF] 1 servers were removed due to timeout
+2026-07-29 14:29:00 [INF] Cleaning expired API Keys at "2026-07-29T14:29:00.7785134+05:30"
+2026-07-29 14:30:00 [INF] Cleaning expired API Keys at "2026-07-29T14:30:00.9669701+05:30"
+2026-07-29 14:33:23 [INF] Start installing Hangfire SQL objects...
+2026-07-29 14:33:23 [INF] Hangfire SQL objects installed.
+2026-07-29 14:33:26 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 14:33:26 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 14:33:26 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 14:33:26 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 14:33:26 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 14:33:26 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 14:33:27 [INF] Server desktop-3n6fi4h:28428:232dbbb9 successfully announced in 116.1337 ms
+2026-07-29 14:33:27 [INF] Server desktop-3n6fi4h:28428:232dbbb9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 14:33:29 [INF] Server desktop-3n6fi4h:28428:232dbbb9 all the dispatchers started
+2026-07-29 14:33:30 [INF] Cleaning expired API Keys at "2026-07-29T14:33:30.1233693+05:30"
+2026-07-29 14:33:30 [INF] HTTP GET /swagger/index.html responded 200 in 334.8355 ms
+2026-07-29 14:33:31 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 41.5050 ms
+2026-07-29 14:34:00 [INF] Cleaning expired API Keys at "2026-07-29T14:34:00.1757693+05:30"
+2026-07-29 14:35:00 [INF] Cleaning expired API Keys at "2026-07-29T14:35:00.5482576+05:30"
+2026-07-29 14:36:00 [INF] Cleaning expired API Keys at "2026-07-29T14:36:00.6940273+05:30"
+2026-07-29 14:36:16 [INF] HTTP GET /api/reports/download/pdf/Products_20260729_141551.pdf responded 200 in 7031.9731 ms
+2026-07-29 14:37:00 [INF] Cleaning expired API Keys at "2026-07-29T14:37:00.8811758+05:30"
+2026-07-29 14:38:01 [INF] Cleaning expired API Keys at "2026-07-29T14:38:01.0000157+05:30"
+2026-07-29 14:38:27 [INF] 1 servers were removed due to timeout
+2026-07-29 14:39:01 [INF] Cleaning expired API Keys at "2026-07-29T14:39:01.3255100+05:30"
+2026-07-29 14:40:01 [INF] Cleaning expired API Keys at "2026-07-29T14:40:01.4692155+05:30"
+2026-07-29 14:41:01 [INF] Cleaning expired API Keys at "2026-07-29T14:41:01.6209046+05:30"
+2026-07-29 14:42:01 [INF] Cleaning expired API Keys at "2026-07-29T14:42:01.7362350+05:30"
+2026-07-29 14:43:01 [INF] Cleaning expired API Keys at "2026-07-29T14:43:01.9550374+05:30"
+2026-07-29 14:44:02 [INF] Cleaning expired API Keys at "2026-07-29T14:44:02.1884572+05:30"
+2026-07-29 14:45:02 [INF] Cleaning expired API Keys at "2026-07-29T14:45:02.3273443+05:30"
+2026-07-29 14:46:02 [INF] Cleaning expired API Keys at "2026-07-29T14:46:02.4591091+05:30"
+2026-07-29 14:47:02 [INF] Cleaning expired API Keys at "2026-07-29T14:47:02.5716280+05:30"
+2026-07-29 14:48:02 [INF] Cleaning expired API Keys at "2026-07-29T14:48:02.7267587+05:30"
+2026-07-29 14:49:03 [INF] Cleaning expired API Keys at "2026-07-29T14:49:03.1053501+05:30"
+2026-07-29 14:50:03 [INF] Cleaning expired API Keys at "2026-07-29T14:50:03.1997154+05:30"
+2026-07-29 14:51:03 [INF] Cleaning expired API Keys at "2026-07-29T14:51:03.3116281+05:30"
+2026-07-29 14:52:03 [INF] Cleaning expired API Keys at "2026-07-29T14:52:03.7201556+05:30"
+2026-07-29 14:53:04 [INF] Cleaning expired API Keys at "2026-07-29T14:53:04.2582693+05:30"
+2026-07-29 14:54:04 [INF] Cleaning expired API Keys at "2026-07-29T14:54:04.5692729+05:30"
+2026-07-29 14:55:04 [INF] Cleaning expired API Keys at "2026-07-29T14:55:04.6933900+05:30"
+2026-07-29 14:56:04 [INF] Cleaning expired API Keys at "2026-07-29T14:56:04.8284991+05:30"
+2026-07-29 14:57:04 [INF] Cleaning expired API Keys at "2026-07-29T14:57:04.9979986+05:30"
+2026-07-29 14:58:05 [INF] Cleaning expired API Keys at "2026-07-29T14:58:05.1282361+05:30"
+2026-07-29 14:59:05 [INF] Cleaning expired API Keys at "2026-07-29T14:59:05.4159085+05:30"
+2026-07-29 15:00:05 [INF] Cleaning expired API Keys at "2026-07-29T15:00:05.5664603+05:30"
+2026-07-29 15:01:05 [INF] Cleaning expired API Keys at "2026-07-29T15:01:05.7618739+05:30"
+2026-07-29 15:02:05 [INF] Cleaning expired API Keys at "2026-07-29T15:02:05.8652033+05:30"
+2026-07-29 15:03:06 [INF] Cleaning expired API Keys at "2026-07-29T15:03:06.0790658+05:30"
+2026-07-29 15:04:06 [INF] Cleaning expired API Keys at "2026-07-29T15:04:06.2105145+05:30"
+2026-07-29 15:05:06 [INF] Cleaning expired API Keys at "2026-07-29T15:05:06.3097516+05:30"
+2026-07-29 15:06:06 [INF] Cleaning expired API Keys at "2026-07-29T15:06:06.4358657+05:30"
+2026-07-29 15:07:06 [INF] Cleaning expired API Keys at "2026-07-29T15:07:06.5209489+05:30"
+2026-07-29 15:08:06 [INF] Cleaning expired API Keys at "2026-07-29T15:08:06.6761249+05:30"
+2026-07-29 15:09:06 [INF] Cleaning expired API Keys at "2026-07-29T15:09:06.8628649+05:30"
+2026-07-29 15:10:06 [INF] Cleaning expired API Keys at "2026-07-29T15:10:06.9573527+05:30"
+2026-07-29 15:11:07 [INF] Cleaning expired API Keys at "2026-07-29T15:11:07.0543956+05:30"
+2026-07-29 15:12:07 [INF] Cleaning expired API Keys at "2026-07-29T15:12:07.1301100+05:30"
+2026-07-29 15:13:07 [INF] Cleaning expired API Keys at "2026-07-29T15:13:07.2657742+05:30"
+2026-07-29 15:14:07 [INF] Cleaning expired API Keys at "2026-07-29T15:14:07.4872755+05:30"
+2026-07-29 15:15:07 [INF] Cleaning expired API Keys at "2026-07-29T15:15:07.6110289+05:30"
+2026-07-29 15:16:07 [INF] Cleaning expired API Keys at "2026-07-29T15:16:07.7386955+05:30"
+2026-07-29 15:17:07 [INF] Cleaning expired API Keys at "2026-07-29T15:17:07.8893494+05:30"
+2026-07-29 15:18:07 [INF] Cleaning expired API Keys at "2026-07-29T15:18:07.9910182+05:30"
+2026-07-29 15:19:08 [INF] Cleaning expired API Keys at "2026-07-29T15:19:08.2601075+05:30"
+2026-07-29 15:20:08 [INF] Cleaning expired API Keys at "2026-07-29T15:20:08.3765948+05:30"
+2026-07-29 15:21:08 [INF] Cleaning expired API Keys at "2026-07-29T15:21:08.4780369+05:30"
+2026-07-29 15:22:08 [INF] Cleaning expired API Keys at "2026-07-29T15:22:08.5816412+05:30"
+2026-07-29 15:23:08 [INF] Cleaning expired API Keys at "2026-07-29T15:23:08.7402417+05:30"
+2026-07-29 15:24:08 [INF] Cleaning expired API Keys at "2026-07-29T15:24:08.9608159+05:30"
+2026-07-29 15:25:09 [INF] Cleaning expired API Keys at "2026-07-29T15:25:09.3979047+05:30"
+2026-07-29 15:26:09 [INF] Cleaning expired API Keys at "2026-07-29T15:26:09.5109880+05:30"
+2026-07-29 15:27:09 [INF] Cleaning expired API Keys at "2026-07-29T15:27:09.6406072+05:30"
+2026-07-29 15:28:09 [INF] Cleaning expired API Keys at "2026-07-29T15:28:09.8058427+05:30"
+2026-07-29 15:29:10 [INF] Cleaning expired API Keys at "2026-07-29T15:29:10.0166508+05:30"
+2026-07-29 15:30:10 [INF] Cleaning expired API Keys at "2026-07-29T15:30:10.5183154+05:30"
+2026-07-29 15:31:10 [INF] Cleaning expired API Keys at "2026-07-29T15:31:10.6175996+05:30"
+2026-07-29 15:32:11 [INF] Cleaning expired API Keys at "2026-07-29T15:32:11.0669947+05:30"
+2026-07-29 15:33:11 [INF] Cleaning expired API Keys at "2026-07-29T15:33:11.2197900+05:30"
+2026-07-29 15:34:11 [INF] Cleaning expired API Keys at "2026-07-29T15:34:11.3967078+05:30"
+2026-07-29 15:35:11 [INF] Cleaning expired API Keys at "2026-07-29T15:35:11.5180295+05:30"
+2026-07-29 15:36:11 [INF] Cleaning expired API Keys at "2026-07-29T15:36:11.6439045+05:30"
+2026-07-29 15:37:11 [INF] Cleaning expired API Keys at "2026-07-29T15:37:11.7462757+05:30"
+2026-07-29 15:38:11 [INF] Cleaning expired API Keys at "2026-07-29T15:38:11.8580625+05:30"
+2026-07-29 16:19:33 [INF] Cleaning expired API Keys at "2026-07-29T16:19:33.9103118+05:30"
+2026-07-29 16:19:36 [INF] 1 servers were removed due to timeout
+2026-07-29 16:19:36 [WRN] Server desktop-3n6fi4h:28428:232dbbb9 was considered dead by other servers, restarting...
+2026-07-29 16:19:36 [INF] Server desktop-3n6fi4h:28428:232dbbb9 caught restart signal...
+2026-07-29 16:19:37 [WRN] Server desktop-3n6fi4h:28428:232dbbb9 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2026-07-29 16:19:38 [INF] Server desktop-3n6fi4h:28428:232dbbb9 successfully reported itself as stopped in 105.742 ms
+2026-07-29 16:19:38 [INF] Server desktop-3n6fi4h:28428:232dbbb9 has been stopped in total 911.2053 ms
+2026-07-29 16:19:38 [INF] Server desktop-3n6fi4h:28428:dfd9ee1e successfully announced in 51.272 ms
+2026-07-29 16:19:38 [INF] Server desktop-3n6fi4h:28428:dfd9ee1e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 16:19:38 [INF] Server desktop-3n6fi4h:28428:dfd9ee1e all the dispatchers started
+2026-07-29 16:20:09 [INF] Cleaning expired API Keys at "2026-07-29T16:20:09.0568918+05:30"
+2026-07-29 16:21:10 [INF] Cleaning expired API Keys at "2026-07-29T16:21:10.0487176+05:30"
+2026-07-29 16:58:38 [INF] Cleaning expired API Keys at "2026-07-29T16:58:38.3338321+05:30"
+2026-07-29 16:59:10 [INF] Cleaning expired API Keys at "2026-07-29T16:59:10.0746002+05:30"
+2026-07-29 17:00:12 [INF] Cleaning expired API Keys at "2026-07-29T17:00:12.9502036+05:30"
+2026-07-29 17:01:13 [INF] Cleaning expired API Keys at "2026-07-29T17:01:13.9543614+05:30"
+2026-07-29 17:02:14 [INF] Cleaning expired API Keys at "2026-07-29T17:02:14.5615028+05:30"
+2026-07-29 17:03:14 [INF] Cleaning expired API Keys at "2026-07-29T17:03:14.9760728+05:30"
+2026-07-29 17:04:15 [INF] Cleaning expired API Keys at "2026-07-29T17:04:15.5373499+05:30"
+2026-07-29 17:05:00 [INF] Cleaning expired API Keys at "2026-07-29T17:05:00.6864993+05:30"
+2026-07-29 17:06:00 [INF] Cleaning expired API Keys at "2026-07-29T17:06:00.9593534+05:30"
+2026-07-29 17:07:01 [INF] Cleaning expired API Keys at "2026-07-29T17:07:01.1856593+05:30"
+2026-07-29 17:08:01 [INF] Cleaning expired API Keys at "2026-07-29T17:08:01.2503427+05:30"
+2026-07-29 17:09:01 [INF] Cleaning expired API Keys at "2026-07-29T17:09:01.4043024+05:30"
+2026-07-29 17:10:01 [INF] Cleaning expired API Keys at "2026-07-29T17:10:01.5092344+05:30"
+2026-07-29 17:11:01 [INF] Cleaning expired API Keys at "2026-07-29T17:11:01.6568270+05:30"
+2026-07-29 17:12:01 [INF] Cleaning expired API Keys at "2026-07-29T17:12:01.7850529+05:30"
+2026-07-29 17:13:01 [INF] Cleaning expired API Keys at "2026-07-29T17:13:01.8594578+05:30"
+2026-07-29 17:14:02 [INF] Cleaning expired API Keys at "2026-07-29T17:14:02.0189283+05:30"
+2026-07-29 17:15:02 [INF] Cleaning expired API Keys at "2026-07-29T17:15:02.0853427+05:30"
+2026-07-29 17:16:02 [INF] Cleaning expired API Keys at "2026-07-29T17:16:02.1716453+05:30"
+2026-07-29 17:17:02 [INF] Cleaning expired API Keys at "2026-07-29T17:17:02.3783260+05:30"
+2026-07-29 17:18:02 [INF] Cleaning expired API Keys at "2026-07-29T17:18:02.7021830+05:30"
+2026-07-29 17:19:02 [INF] Cleaning expired API Keys at "2026-07-29T17:19:02.9171226+05:30"
+2026-07-29 17:20:05 [INF] Cleaning expired API Keys at "2026-07-29T17:20:05.8473334+05:30"
+2026-07-29 17:21:05 [INF] Cleaning expired API Keys at "2026-07-29T17:21:05.5652266+05:30"
+2026-07-29 17:22:05 [INF] Cleaning expired API Keys at "2026-07-29T17:22:05.9832279+05:30"
+2026-07-29 17:23:11 [INF] Cleaning expired API Keys at "2026-07-29T17:23:11.8815478+05:30"
+2026-07-29 17:24:11 [INF] Cleaning expired API Keys at "2026-07-29T17:24:11.7337919+05:30"
+2026-07-29 17:25:11 [INF] Cleaning expired API Keys at "2026-07-29T17:25:11.8480016+05:30"
+2026-07-29 17:26:12 [INF] Cleaning expired API Keys at "2026-07-29T17:26:12.6611632+05:30"
+2026-07-29 17:27:12 [INF] Cleaning expired API Keys at "2026-07-29T17:27:12.8849815+05:30"
+2026-07-29 17:28:12 [INF] Cleaning expired API Keys at "2026-07-29T17:28:12.9501296+05:30"
+2026-07-29 17:29:13 [INF] Cleaning expired API Keys at "2026-07-29T17:29:13.0322319+05:30"
+2026-07-29 17:30:13 [INF] Cleaning expired API Keys at "2026-07-29T17:30:13.1385830+05:30"
+2026-07-29 17:31:13 [INF] Cleaning expired API Keys at "2026-07-29T17:31:13.2755747+05:30"
+2026-07-29 17:32:16 [INF] Cleaning expired API Keys at "2026-07-29T17:32:16.6876335+05:30"
+2026-07-29 17:33:01 [INF] Cleaning expired API Keys at "2026-07-29T17:33:01.3508261+05:30"
+2026-07-29 17:34:02 [INF] Cleaning expired API Keys at "2026-07-29T17:34:02.5249305+05:30"
+2026-07-29 17:35:03 [INF] Cleaning expired API Keys at "2026-07-29T17:35:03.4333741+05:30"
+2026-07-29 17:36:03 [INF] Cleaning expired API Keys at "2026-07-29T17:36:03.4734653+05:30"
+2026-07-29 17:37:13 [INF] Cleaning expired API Keys at "2026-07-29T17:37:13.8117324+05:30"
+2026-07-29 17:38:13 [INF] Cleaning expired API Keys at "2026-07-29T17:38:13.7401136+05:30"
+2026-07-29 17:39:17 [INF] Cleaning expired API Keys at "2026-07-29T17:39:17.1276369+05:30"
+2026-07-29 17:40:06 [INF] Cleaning expired API Keys at "2026-07-29T17:40:06.2205492+05:30"
+2026-07-29 17:41:10 [INF] Cleaning expired API Keys at "2026-07-29T17:41:10.2684891+05:30"
+2026-07-29 17:42:09 [INF] Cleaning expired API Keys at "2026-07-29T17:42:09.5734067+05:30"
+2026-07-29 17:43:09 [INF] Cleaning expired API Keys at "2026-07-29T17:43:09.6796489+05:30"
+2026-07-29 17:44:13 [INF] Cleaning expired API Keys at "2026-07-29T17:44:13.3043213+05:30"
+2026-07-29 17:45:15 [INF] Cleaning expired API Keys at "2026-07-29T17:45:14.9679624+05:30"
+2026-07-29 17:46:14 [INF] Cleaning expired API Keys at "2026-07-29T17:46:14.6536609+05:30"
+2026-07-29 17:47:14 [INF] Cleaning expired API Keys at "2026-07-29T17:47:14.7782740+05:30"
+2026-07-29 17:48:14 [INF] Cleaning expired API Keys at "2026-07-29T17:48:14.9002065+05:30"
+2026-07-29 17:49:15 [INF] Cleaning expired API Keys at "2026-07-29T17:49:15.2628577+05:30"
+2026-07-29 17:50:00 [INF] Cleaning expired API Keys at "2026-07-29T17:50:00.3068467+05:30"
+2026-07-29 17:51:00 [INF] Cleaning expired API Keys at "2026-07-29T17:51:00.3832970+05:30"
+2026-07-29 17:52:00 [INF] Cleaning expired API Keys at "2026-07-29T17:52:00.6781238+05:30"
+2026-07-29 17:53:01 [INF] Cleaning expired API Keys at "2026-07-29T17:53:01.2307635+05:30"
+2026-07-29 17:54:01 [INF] Cleaning expired API Keys at "2026-07-29T17:54:01.2590975+05:30"
+2026-07-29 17:55:01 [INF] Cleaning expired API Keys at "2026-07-29T17:55:01.6309212+05:30"
+2026-07-29 17:56:01 [INF] Cleaning expired API Keys at "2026-07-29T17:56:01.6922055+05:30"
+2026-07-29 17:56:07 [INF] Removed 1 outdated record(s) from 'job' table.
+2026-07-29 17:57:01 [INF] Cleaning expired API Keys at "2026-07-29T17:57:01.8645433+05:30"
+2026-07-29 17:58:01 [INF] Cleaning expired API Keys at "2026-07-29T17:58:01.9977469+05:30"
+2026-07-29 17:59:02 [INF] Cleaning expired API Keys at "2026-07-29T17:59:02.2776787+05:30"
+2026-07-29 22:09:47 [INF] Start installing Hangfire SQL objects...
+2026-07-29 22:09:48 [INF] Hangfire SQL objects installed.
+2026-07-29 22:09:54 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 22:09:54 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 22:09:54 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 22:09:54 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 22:09:54 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 22:09:54 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 22:09:54 [INF] Server desktop-3n6fi4h:28400:03c105ae successfully announced in 49.6801 ms
+2026-07-29 22:09:54 [INF] Server desktop-3n6fi4h:28400:03c105ae is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 22:09:54 [INF] 1 servers were removed due to timeout
+2026-07-29 22:09:54 [INF] Removed 1 outdated record(s) from 'aggregatedcounter' table.
+2026-07-29 22:09:55 [INF] Server desktop-3n6fi4h:28400:03c105ae all the dispatchers started
+2026-07-29 22:09:56 [INF] Removed 1 outdated record(s) from 'job' table.
+2026-07-29 22:09:58 [INF] Cleaning expired API Keys at "2026-07-29T22:09:58.3431556+05:30"
+2026-07-29 22:10:02 [INF] HTTP GET /swagger/index.html responded 200 in 321.0221 ms
+2026-07-29 22:10:03 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 34.9866 ms
+2026-07-29 22:10:14 [INF] Cleaning expired API Keys at "2026-07-29T22:10:14.2628959+05:30"
+2026-07-29 22:11:04 [INF] Starting Excel report generation...
+2026-07-29 22:11:04 [INF] HTTP POST /api/reports/products/excel responded 200 in 17412.1621 ms
+2026-07-29 22:11:14 [INF] Cleaning expired API Keys at "2026-07-29T22:11:14.4272708+05:30"
+2026-07-29 22:11:20 [INF] HTTP GET /hangfire responded 200 in 467.7597 ms
+2026-07-29 22:11:21 [INF] HTTP GET /hangfire/css-dark182401554603607 responded 200 in 161.3763 ms
+2026-07-29 22:11:21 [INF] HTTP GET /hangfire/css182401758231774 responded 200 in 208.9651 ms
+2026-07-29 22:11:21 [INF] HTTP GET /hangfire/js18240211194075 responded 200 in 247.4240 ms
+2026-07-29 22:11:21 [INF] Excel report generated successfully: D:\UserRepo\StartupWebAPIs\Reports\Excel\Products_20260729_221108.xlsx
+2026-07-29 22:11:23 [INF] HTTP POST /hangfire/stats responded 200 in 127.7285 ms
+2026-07-29 22:11:25 [INF] HTTP POST /hangfire/stats responded 200 in 73.5337 ms
+2026-07-29 22:11:27 [INF] HTTP GET /hangfire/jobs/enqueued responded 200 in 100.7941 ms
+2026-07-29 22:11:29 [INF] HTTP POST /hangfire/stats responded 200 in 18.1999 ms
+2026-07-29 22:11:30 [INF] HTTP GET /hangfire/jobs/succeeded responded 200 in 188.0975 ms
+2026-07-29 22:11:32 [INF] HTTP POST /hangfire/stats responded 200 in 51.0352 ms
+2026-07-29 22:11:34 [INF] HTTP POST /hangfire/stats responded 200 in 18.2067 ms
+2026-07-29 22:11:37 [INF] HTTP POST /hangfire/stats responded 200 in 20.3790 ms
+2026-07-29 22:11:39 [INF] HTTP POST /hangfire/stats responded 200 in 41.6694 ms
+2026-07-29 22:11:41 [INF] HTTP POST /hangfire/stats responded 200 in 25.0895 ms
+2026-07-29 22:11:42 [INF] HTTP GET /hangfire/jobs/details/171 responded 200 in 284.1626 ms
+2026-07-29 22:11:45 [INF] HTTP POST /hangfire/stats responded 200 in 34.2131 ms
+2026-07-29 22:11:48 [INF] HTTP POST /hangfire/stats responded 200 in 260.7969 ms
+2026-07-29 22:11:51 [INF] HTTP POST /hangfire/stats responded 200 in 29.9902 ms
+2026-07-29 22:11:54 [INF] HTTP POST /hangfire/stats responded 200 in 22.6674 ms
+2026-07-29 22:11:57 [INF] HTTP POST /hangfire/stats responded 200 in 22.7372 ms
+2026-07-29 22:12:00 [INF] HTTP POST /hangfire/stats responded 200 in 35.3595 ms
+2026-07-29 22:12:03 [INF] HTTP POST /hangfire/stats responded 200 in 45.4082 ms
+2026-07-29 22:12:06 [INF] HTTP POST /hangfire/stats responded 200 in 91.1124 ms
+2026-07-29 22:12:09 [INF] HTTP POST /hangfire/stats responded 200 in 34.9259 ms
+2026-07-29 22:12:12 [INF] HTTP POST /hangfire/stats responded 200 in 66.8774 ms
+2026-07-29 22:12:14 [INF] Cleaning expired API Keys at "2026-07-29T22:12:14.7631908+05:30"
+2026-07-29 22:12:15 [INF] HTTP POST /hangfire/stats responded 200 in 34.2773 ms
+2026-07-29 22:12:18 [INF] HTTP POST /hangfire/stats responded 200 in 275.3875 ms
+2026-07-29 22:12:21 [INF] HTTP POST /hangfire/stats responded 200 in 23.5926 ms
+2026-07-29 22:12:24 [INF] HTTP POST /hangfire/stats responded 200 in 21.6671 ms
+2026-07-29 22:12:27 [INF] HTTP POST /hangfire/stats responded 200 in 132.0718 ms
+2026-07-29 22:12:31 [INF] HTTP POST /hangfire/stats responded 200 in 721.7019 ms
+2026-07-29 22:12:34 [INF] HTTP POST /hangfire/stats responded 200 in 143.6721 ms
+2026-07-29 22:12:43 [INF] HTTP POST /hangfire/stats responded 200 in 44.9949 ms
+2026-07-29 22:12:46 [INF] HTTP POST /hangfire/stats responded 200 in 19.9241 ms
+2026-07-29 22:12:49 [INF] HTTP POST /hangfire/stats responded 200 in 70.3278 ms
+2026-07-29 22:12:52 [INF] HTTP POST /hangfire/stats responded 200 in 24.7122 ms
+2026-07-29 22:12:55 [INF] HTTP POST /hangfire/stats responded 200 in 118.5460 ms
+2026-07-29 22:12:57 [INF] HTTP GET /api/reports/download/excel/Products_20260729_141551.pdf responded 404 in 5223.8345 ms
+2026-07-29 22:12:58 [INF] HTTP POST /hangfire/stats responded 200 in 101.3243 ms
+2026-07-29 22:13:01 [INF] Cleaning expired API Keys at "2026-07-29T22:13:01.0024317+05:30"
+2026-07-29 22:13:01 [INF] HTTP POST /hangfire/stats responded 200 in 16.9154 ms
+2026-07-29 22:13:04 [INF] HTTP POST /hangfire/stats responded 200 in 14.5100 ms
+2026-07-29 22:13:07 [INF] HTTP POST /hangfire/stats responded 200 in 35.0811 ms
+2026-07-29 22:13:10 [INF] HTTP POST /hangfire/stats responded 200 in 31.6543 ms
+2026-07-29 22:13:13 [INF] HTTP POST /hangfire/stats responded 200 in 29.0831 ms
+2026-07-29 22:13:16 [INF] HTTP POST /hangfire/stats responded 200 in 35.2859 ms
+2026-07-29 22:13:19 [INF] HTTP POST /hangfire/stats responded 200 in 10.9143 ms
+2026-07-29 22:13:22 [INF] HTTP POST /hangfire/stats responded 200 in 146.9124 ms
+2026-07-29 22:13:25 [INF] HTTP POST /hangfire/stats responded 200 in 26.1322 ms
+2026-07-29 22:13:28 [INF] HTTP POST /hangfire/stats responded 200 in 9.0441 ms
+2026-07-29 22:13:31 [INF] HTTP POST /hangfire/stats responded 200 in 11.0193 ms
+2026-07-29 22:13:34 [INF] HTTP POST /hangfire/stats responded 200 in 8.4110 ms
+2026-07-29 22:13:37 [INF] HTTP POST /hangfire/stats responded 200 in 138.5532 ms
+2026-07-29 22:13:40 [INF] HTTP POST /hangfire/stats responded 200 in 13.8355 ms
+2026-07-29 22:13:43 [INF] HTTP POST /hangfire/stats responded 200 in 8.2690 ms
+2026-07-29 22:13:46 [INF] HTTP POST /hangfire/stats responded 200 in 124.2766 ms
+2026-07-29 22:13:49 [INF] HTTP POST /hangfire/stats responded 200 in 10.7346 ms
+2026-07-29 22:13:53 [INF] HTTP POST /hangfire/stats responded 200 in 58.7356 ms
+2026-07-29 22:13:56 [INF] HTTP POST /hangfire/stats responded 200 in 119.3453 ms
+2026-07-29 22:13:59 [INF] HTTP POST /hangfire/stats responded 200 in 187.1155 ms
+2026-07-29 22:14:01 [INF] Cleaning expired API Keys at "2026-07-29T22:14:01.0100323+05:30"
+2026-07-29 22:14:02 [INF] HTTP POST /hangfire/stats responded 200 in 41.5818 ms
+2026-07-29 22:14:05 [INF] HTTP POST /hangfire/stats responded 200 in 90.8766 ms
+2026-07-29 22:14:08 [INF] HTTP POST /hangfire/stats responded 200 in 14.1288 ms
+2026-07-29 22:14:11 [INF] HTTP POST /hangfire/stats responded 200 in 208.5456 ms
+2026-07-29 22:14:14 [INF] HTTP POST /hangfire/stats responded 200 in 61.7427 ms
+2026-07-29 22:14:17 [INF] HTTP POST /hangfire/stats responded 200 in 6.7081 ms
+2026-07-29 22:14:20 [INF] HTTP POST /hangfire/stats responded 200 in 13.8232 ms
+2026-07-29 22:14:23 [INF] HTTP POST /hangfire/stats responded 200 in 11.8091 ms
+2026-07-29 22:14:26 [INF] HTTP POST /hangfire/stats responded 200 in 11.6734 ms
+2026-07-29 22:14:29 [INF] HTTP POST /hangfire/stats responded 200 in 41.0182 ms
+2026-07-29 22:14:32 [INF] HTTP POST /hangfire/stats responded 200 in 18.6289 ms
+2026-07-29 22:14:35 [INF] HTTP POST /hangfire/stats responded 200 in 8.8265 ms
+2026-07-29 22:14:38 [INF] HTTP POST /hangfire/stats responded 200 in 12.6333 ms
+2026-07-29 22:14:41 [INF] HTTP POST /hangfire/stats responded 200 in 33.3747 ms
+2026-07-29 22:14:44 [INF] HTTP POST /hangfire/stats responded 200 in 18.5012 ms
+2026-07-29 22:14:47 [INF] HTTP POST /hangfire/stats responded 200 in 14.2346 ms
+2026-07-29 22:14:51 [INF] HTTP POST /hangfire/stats responded 200 in 754.0543 ms
+2026-07-29 22:14:55 [INF] HTTP POST /hangfire/stats responded 200 in 6.3223 ms
+2026-07-29 22:14:58 [INF] HTTP POST /hangfire/stats responded 200 in 69.1554 ms
+2026-07-29 22:15:01 [INF] HTTP POST /hangfire/stats responded 200 in 18.0331 ms
+2026-07-29 22:15:01 [INF] Cleaning expired API Keys at "2026-07-29T22:15:01.3176102+05:30"
+2026-07-29 22:15:01 [INF] HTTP GET /api/reports/download/excel/Products_20260729_221108 responded 404 in 392.5695 ms
+2026-07-29 22:15:04 [INF] HTTP POST /hangfire/stats responded 200 in 12.3835 ms
+2026-07-29 22:15:07 [INF] HTTP POST /hangfire/stats responded 200 in 5.8912 ms
+2026-07-29 22:15:10 [INF] HTTP POST /hangfire/stats responded 200 in 8.0472 ms
+2026-07-29 22:15:13 [INF] HTTP POST /hangfire/stats responded 200 in 7.3203 ms
+2026-07-29 22:15:16 [INF] HTTP POST /hangfire/stats responded 200 in 7.4533 ms
+2026-07-29 22:15:19 [INF] HTTP POST /hangfire/stats responded 200 in 8.5253 ms
+2026-07-29 22:15:22 [INF] HTTP POST /hangfire/stats responded 200 in 4.5002 ms
+2026-07-29 22:15:25 [INF] HTTP POST /hangfire/stats responded 200 in 9.0742 ms
+2026-07-29 22:15:28 [INF] HTTP POST /hangfire/stats responded 200 in 9.4521 ms
+2026-07-29 22:15:31 [INF] HTTP POST /hangfire/stats responded 200 in 6.1144 ms
+2026-07-29 22:15:34 [INF] HTTP POST /hangfire/stats responded 200 in 6.4111 ms
+2026-07-29 22:15:37 [INF] HTTP POST /hangfire/stats responded 200 in 11.5771 ms
+2026-07-29 22:15:38 [INF] HTTP GET /api/reports/download/excel/Products_20260729_221108.xlsx responded 200 in 465.5175 ms
+2026-07-29 22:15:40 [INF] HTTP POST /hangfire/stats responded 200 in 5.1567 ms
+2026-07-29 22:15:43 [INF] HTTP POST /hangfire/stats responded 200 in 17.4893 ms
+2026-07-29 22:15:47 [INF] HTTP POST /hangfire/stats responded 200 in 12.1207 ms
+2026-07-29 22:15:50 [INF] HTTP POST /hangfire/stats responded 200 in 10.0570 ms
+2026-07-29 22:15:53 [INF] HTTP POST /hangfire/stats responded 200 in 5.0954 ms
+2026-07-29 22:15:56 [INF] HTTP POST /hangfire/stats responded 200 in 16.7749 ms
+2026-07-29 22:15:59 [INF] HTTP POST /hangfire/stats responded 200 in 6.8188 ms
+2026-07-29 22:16:01 [INF] Cleaning expired API Keys at "2026-07-29T22:16:01.5841254+05:30"
+2026-07-29 22:16:02 [INF] HTTP POST /hangfire/stats responded 200 in 11.8839 ms
+2026-07-29 22:16:05 [INF] HTTP POST /hangfire/stats responded 200 in 10.6880 ms
+2026-07-29 22:16:08 [INF] HTTP POST /hangfire/stats responded 200 in 8.9225 ms
+2026-07-29 22:16:11 [INF] HTTP POST /hangfire/stats responded 200 in 9.4609 ms
+2026-07-29 22:16:14 [INF] HTTP POST /hangfire/stats responded 200 in 8.3294 ms
+2026-07-29 22:16:17 [INF] HTTP POST /hangfire/stats responded 200 in 8.0802 ms
+2026-07-29 22:16:20 [INF] HTTP POST /hangfire/stats responded 200 in 6.7517 ms
+2026-07-29 22:16:23 [INF] HTTP POST /hangfire/stats responded 200 in 8.8159 ms
+2026-07-29 22:16:26 [INF] HTTP POST /hangfire/stats responded 200 in 6.1736 ms
+2026-07-29 22:16:29 [INF] HTTP POST /hangfire/stats responded 200 in 33.1395 ms
+2026-07-29 22:16:32 [INF] HTTP POST /hangfire/stats responded 200 in 509.0069 ms
+2026-07-29 22:16:35 [INF] HTTP POST /hangfire/stats responded 200 in 10.4875 ms
+2026-07-29 22:16:38 [INF] HTTP POST /hangfire/stats responded 200 in 20.7568 ms
+2026-07-29 22:16:41 [INF] HTTP POST /hangfire/stats responded 200 in 13.4291 ms
+2026-07-29 22:16:44 [INF] HTTP POST /hangfire/stats responded 200 in 111.8508 ms
+2026-07-29 22:16:47 [INF] HTTP POST /hangfire/stats responded 200 in 9.7290 ms
+2026-07-29 22:16:50 [INF] HTTP POST /hangfire/stats responded 200 in 22.3896 ms
+2026-07-29 22:16:53 [INF] HTTP POST /hangfire/stats responded 200 in 9.1260 ms
+2026-07-29 22:16:56 [INF] HTTP POST /hangfire/stats responded 200 in 31.6472 ms
+2026-07-29 22:16:59 [INF] HTTP POST /hangfire/stats responded 200 in 123.3751 ms
+2026-07-29 22:17:03 [INF] HTTP POST /hangfire/stats responded 200 in 7.5737 ms
+2026-07-29 22:17:03 [INF] Cleaning expired API Keys at "2026-07-29T22:17:03.9546457+05:30"
+2026-07-29 22:17:06 [INF] HTTP POST /hangfire/stats responded 200 in 7.0707 ms
+2026-07-29 22:17:09 [INF] HTTP POST /hangfire/stats responded 200 in 6.7801 ms
+2026-07-29 22:17:12 [INF] HTTP POST /hangfire/stats responded 200 in 15.3051 ms
+2026-07-29 22:17:15 [INF] HTTP POST /hangfire/stats responded 200 in 10.7908 ms
+2026-07-29 22:17:18 [INF] HTTP POST /hangfire/stats responded 200 in 9.4253 ms
+2026-07-29 22:17:21 [INF] HTTP POST /hangfire/stats responded 200 in 7.0795 ms
+2026-07-29 22:17:24 [INF] HTTP POST /hangfire/stats responded 200 in 13.8269 ms
+2026-07-29 22:17:27 [INF] HTTP POST /hangfire/stats responded 200 in 5.4462 ms
+2026-07-29 22:17:30 [INF] HTTP POST /hangfire/stats responded 200 in 6.7257 ms
+2026-07-29 22:17:33 [INF] HTTP POST /hangfire/stats responded 200 in 8.6279 ms
+2026-07-29 22:17:36 [INF] HTTP POST /hangfire/stats responded 200 in 6.4978 ms
+2026-07-29 22:40:14 [INF] Start installing Hangfire SQL objects...
+2026-07-29 22:40:15 [INF] Hangfire SQL objects installed.
+2026-07-29 22:40:20 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 22:40:20 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 22:40:20 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 22:40:20 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 22:40:20 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 22:40:20 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 22:40:20 [INF] Server desktop-3n6fi4h:37860:7edfd544 successfully announced in 61.4986 ms
+2026-07-29 22:40:20 [INF] Server desktop-3n6fi4h:37860:7edfd544 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 22:40:20 [INF] 1 servers were removed due to timeout
+2026-07-29 22:40:22 [INF] Server desktop-3n6fi4h:37860:7edfd544 all the dispatchers started
+2026-07-29 22:40:23 [INF] Cleaning expired API Keys at "2026-07-29T22:40:23.4537837+05:30"
+2026-07-29 22:40:23 [INF] HTTP GET /swagger/index.html responded 200 in 245.4589 ms
+2026-07-29 22:40:24 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 32.0742 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileName (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-07-29 22:40:24 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileName (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-29 22:41:08 [INF] Cleaning expired API Keys at "2026-07-29T22:41:08.7385822+05:30"
+2026-07-29 22:47:59 [INF] Start installing Hangfire SQL objects...
+2026-07-29 22:47:59 [INF] Hangfire SQL objects installed.
+2026-07-29 22:48:03 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 22:48:03 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 22:48:03 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 22:48:03 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 22:48:03 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 22:48:03 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 22:48:04 [INF] Server desktop-3n6fi4h:39864:842d5365 successfully announced in 460.7905 ms
+2026-07-29 22:48:04 [INF] Server desktop-3n6fi4h:39864:842d5365 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 22:48:04 [INF] 1 servers were removed due to timeout
+2026-07-29 22:48:05 [INF] Server desktop-3n6fi4h:39864:842d5365 all the dispatchers started
+2026-07-29 22:48:08 [INF] Cleaning expired API Keys at "2026-07-29T22:48:08.0647417+05:30"
+2026-07-29 22:48:12 [INF] HTTP GET /swagger/index.html responded 200 in 441.0428 ms
+2026-07-29 22:48:14 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 36.8383 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileName (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-07-29 22:48:14 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileName (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-29 22:49:08 [INF] Cleaning expired API Keys at "2026-07-29T22:49:08.2781528+05:30"
+2026-07-29 22:49:20 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 64.1639 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileName (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-07-29 22:49:20 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileName (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-29 22:50:10 [INF] Cleaning expired API Keys at "2026-07-29T22:50:10.0740943+05:30"
+2026-07-29 22:51:11 [INF] Cleaning expired API Keys at "2026-07-29T22:51:11.0477986+05:30"
+2026-07-29 22:52:11 [INF] Cleaning expired API Keys at "2026-07-29T22:52:11.3254404+05:30"
+2026-07-29 22:53:11 [INF] Cleaning expired API Keys at "2026-07-29T22:53:11.9150981+05:30"
+2026-07-29 22:54:12 [INF] Start installing Hangfire SQL objects...
+2026-07-29 22:54:12 [INF] Hangfire SQL objects installed.
+2026-07-29 22:54:15 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 22:54:15 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 22:54:15 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 22:54:15 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 22:54:15 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 22:54:15 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 22:54:15 [INF] Server desktop-3n6fi4h:5676:220679ea successfully announced in 49.4302 ms
+2026-07-29 22:54:15 [INF] Server desktop-3n6fi4h:5676:220679ea is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 22:54:16 [INF] Server desktop-3n6fi4h:5676:220679ea all the dispatchers started
+2026-07-29 22:54:17 [INF] Cleaning expired API Keys at "2026-07-29T22:54:17.4667383+05:30"
+2026-07-29 22:54:19 [INF] HTTP GET /swagger/index.html responded 200 in 263.1234 ms
+2026-07-29 22:54:20 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 50.1487 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileNameExl (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-07-29 22:54:20 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/reports/download/excel/{fileName}" for actions - StartupWebAPIs.Controllers.ReportsController.DownloadExcel (StartupWebAPIs),StartupWebAPIs.Controllers.ReportsController.DownloadExcelfileNameExl (StartupWebAPIs). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-29 22:55:44 [INF] Start installing Hangfire SQL objects...
+2026-07-29 22:55:45 [INF] Hangfire SQL objects installed.
+2026-07-29 22:55:49 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-29 22:55:49 [INF] Using the following options for PostgreSQL job storage:
+2026-07-29 22:55:49 [INF]     Queue poll interval: 00:00:15.
+2026-07-29 22:55:49 [INF]     Invisibility timeout: 00:30:00.
+2026-07-29 22:55:49 [INF]     Use sliding invisibility timeout: False.
+2026-07-29 22:55:49 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-29 22:55:50 [INF] Server desktop-3n6fi4h:30640:508ab77b successfully announced in 51.9393 ms
+2026-07-29 22:55:50 [INF] Server desktop-3n6fi4h:30640:508ab77b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-29 22:55:51 [INF] Server desktop-3n6fi4h:30640:508ab77b all the dispatchers started
+2026-07-29 22:55:52 [INF] Cleaning expired API Keys at "2026-07-29T22:55:52.2778034+05:30"
+2026-07-29 22:55:53 [INF] HTTP GET /swagger/index.html responded 200 in 265.3704 ms
+2026-07-29 22:55:57 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 66.0139 ms
+2026-07-29 22:56:07 [INF] Cleaning expired API Keys at "2026-07-29T22:56:07.3411375+05:30"
+2026-07-29 22:56:40 [INF] Starting PDF report generation...
+2026-07-29 22:56:40 [INF] HTTP POST /api/reports/products/pdf responded 200 in 14809.6426 ms
+2026-07-29 22:56:49 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:34.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-29 22:57:09 [INF] Cleaning expired API Keys at "2026-07-29T22:57:09.0357209+05:30"
+2026-07-29 22:57:38 [INF] Starting PDF report generation...
+2026-07-29 22:57:39 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 2 of 10 will be performed in 00:01:00.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
