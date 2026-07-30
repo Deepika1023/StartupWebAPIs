@@ -1,0 +1,523 @@
+2026-07-30 12:58:14 [INF] Start installing Hangfire SQL objects...
+2026-07-30 12:58:14 [INF] Hangfire SQL objects installed.
+2026-07-30 12:58:17 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-30 12:58:17 [INF] Using the following options for PostgreSQL job storage:
+2026-07-30 12:58:17 [INF]     Queue poll interval: 00:00:15.
+2026-07-30 12:58:17 [INF]     Invisibility timeout: 00:30:00.
+2026-07-30 12:58:17 [INF]     Use sliding invisibility timeout: False.
+2026-07-30 12:58:17 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-30 12:58:18 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 successfully announced in 16.4438 ms
+2026-07-30 12:58:18 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-30 12:58:18 [INF] 3 servers were removed due to timeout
+2026-07-30 12:58:18 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 all the dispatchers started
+2026-07-30 12:58:18 [INF] Removed 2 outdated record(s) from 'aggregatedcounter' table.
+2026-07-30 12:58:18 [INF] Cleaning expired API Keys at "2026-07-30T12:58:18.5364466+05:30"
+2026-07-30 12:58:18 [INF] Starting PDF report generation...
+2026-07-30 12:58:19 [INF] Removed 18 outdated record(s) from 'job' table.
+2026-07-30 12:58:20 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:01.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 12:59:03 [INF] Cleaning expired API Keys at "2026-07-30T12:59:03.7232862+05:30"
+2026-07-30 12:59:33 [INF] Starting PDF report generation...
+2026-07-30 12:59:33 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 4 of 10 will be performed in 00:02:32.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 13:00:03 [INF] Cleaning expired API Keys at "2026-07-30T13:00:03.8002178+05:30"
+2026-07-30 13:01:03 [INF] Cleaning expired API Keys at "2026-07-30T13:01:03.9160721+05:30"
+2026-07-30 13:02:04 [INF] Cleaning expired API Keys at "2026-07-30T13:02:04.0754096+05:30"
+2026-07-30 13:02:19 [INF] Starting PDF report generation...
+2026-07-30 13:02:19 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 5 of 10 will be performed in 00:04:41.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 13:03:04 [INF] Cleaning expired API Keys at "2026-07-30T13:03:04.2350387+05:30"
+2026-07-30 13:04:04 [INF] Cleaning expired API Keys at "2026-07-30T13:04:04.5243463+05:30"
+2026-07-30 13:05:04 [INF] Cleaning expired API Keys at "2026-07-30T13:05:04.6056728+05:30"
+2026-07-30 13:06:04 [INF] Cleaning expired API Keys at "2026-07-30T13:06:04.8629810+05:30"
+2026-07-30 13:07:05 [INF] Starting PDF report generation...
+2026-07-30 13:07:05 [INF] Cleaning expired API Keys at "2026-07-30T13:07:05.1966332+05:30"
+2026-07-30 13:07:05 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 6 of 10 will be performed in 00:12:52.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 13:08:05 [INF] Cleaning expired API Keys at "2026-07-30T13:08:05.2813963+05:30"
+2026-07-30 13:09:05 [INF] Cleaning expired API Keys at "2026-07-30T13:09:05.4303952+05:30"
+2026-07-30 13:10:05 [INF] Cleaning expired API Keys at "2026-07-30T13:10:05.4884289+05:30"
+2026-07-30 13:11:05 [INF] Cleaning expired API Keys at "2026-07-30T13:11:05.5805523+05:30"
+2026-07-30 13:12:05 [INF] Cleaning expired API Keys at "2026-07-30T13:12:05.6497870+05:30"
+2026-07-30 13:13:05 [INF] Cleaning expired API Keys at "2026-07-30T13:13:05.7262891+05:30"
+2026-07-30 13:14:05 [INF] Cleaning expired API Keys at "2026-07-30T13:14:05.8248578+05:30"
+2026-07-30 13:15:05 [INF] Cleaning expired API Keys at "2026-07-30T13:15:05.8665580+05:30"
+2026-07-30 13:16:06 [INF] Cleaning expired API Keys at "2026-07-30T13:16:06.0594320+05:30"
+2026-07-30 13:17:06 [INF] Cleaning expired API Keys at "2026-07-30T13:17:06.1094400+05:30"
+2026-07-30 13:18:06 [INF] Cleaning expired API Keys at "2026-07-30T13:18:06.1604102+05:30"
+2026-07-30 13:19:06 [INF] Cleaning expired API Keys at "2026-07-30T13:19:06.3303324+05:30"
+2026-07-30 13:20:06 [INF] Starting PDF report generation...
+2026-07-30 13:20:06 [INF] Cleaning expired API Keys at "2026-07-30T13:20:06.3852541+05:30"
+2026-07-30 13:20:07 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 7 of 10 will be performed in 00:21:58.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 13:21:06 [INF] Cleaning expired API Keys at "2026-07-30T13:21:06.4617802+05:30"
+2026-07-30 13:22:06 [INF] Cleaning expired API Keys at "2026-07-30T13:22:06.5493263+05:30"
+2026-07-30 13:23:06 [INF] Cleaning expired API Keys at "2026-07-30T13:23:06.6060154+05:30"
+2026-07-30 13:24:06 [INF] Cleaning expired API Keys at "2026-07-30T13:24:06.7202588+05:30"
+2026-07-30 13:25:06 [INF] Cleaning expired API Keys at "2026-07-30T13:25:06.8011263+05:30"
+2026-07-30 13:26:06 [INF] Cleaning expired API Keys at "2026-07-30T13:26:06.9195857+05:30"
+2026-07-30 13:27:07 [INF] Cleaning expired API Keys at "2026-07-30T13:27:07.0080364+05:30"
+2026-07-30 13:28:07 [INF] Cleaning expired API Keys at "2026-07-30T13:28:07.0893167+05:30"
+2026-07-30 13:29:07 [INF] Cleaning expired API Keys at "2026-07-30T13:29:07.1729664+05:30"
+2026-07-30 13:30:07 [INF] Cleaning expired API Keys at "2026-07-30T13:30:07.2595809+05:30"
+2026-07-30 13:31:07 [INF] Cleaning expired API Keys at "2026-07-30T13:31:07.3344978+05:30"
+2026-07-30 13:32:07 [INF] Cleaning expired API Keys at "2026-07-30T13:32:07.4264173+05:30"
+2026-07-30 13:33:07 [INF] Cleaning expired API Keys at "2026-07-30T13:33:07.5104081+05:30"
+2026-07-30 13:34:07 [INF] Cleaning expired API Keys at "2026-07-30T13:34:07.6253031+05:30"
+2026-07-30 13:35:08 [INF] Cleaning expired API Keys at "2026-07-30T13:35:07.7059731+05:30"
+2026-07-30 13:36:07 [INF] Cleaning expired API Keys at "2026-07-30T13:36:07.8212066+05:30"
+2026-07-30 13:37:07 [INF] Cleaning expired API Keys at "2026-07-30T13:37:07.9172266+05:30"
+2026-07-30 13:38:08 [INF] Cleaning expired API Keys at "2026-07-30T13:38:08.0573690+05:30"
+2026-07-30 13:39:08 [INF] Cleaning expired API Keys at "2026-07-30T13:39:08.1755327+05:30"
+2026-07-30 13:40:08 [INF] Cleaning expired API Keys at "2026-07-30T13:40:08.2721296+05:30"
+2026-07-30 13:41:08 [INF] Cleaning expired API Keys at "2026-07-30T13:41:08.3934953+05:30"
+2026-07-30 13:42:08 [INF] Starting PDF report generation...
+2026-07-30 13:42:08 [INF] Cleaning expired API Keys at "2026-07-30T13:42:08.4592851+05:30"
+2026-07-30 13:42:09 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 8 of 10 will be performed in 00:42:40.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 13:43:08 [INF] Cleaning expired API Keys at "2026-07-30T13:43:08.5845696+05:30"
+2026-07-30 13:44:08 [INF] Cleaning expired API Keys at "2026-07-30T13:44:08.7137686+05:30"
+2026-07-30 13:45:08 [INF] Cleaning expired API Keys at "2026-07-30T13:45:08.7701699+05:30"
+2026-07-30 13:46:08 [INF] Cleaning expired API Keys at "2026-07-30T13:46:08.8829938+05:30"
+2026-07-30 13:47:08 [INF] Cleaning expired API Keys at "2026-07-30T13:47:08.9637224+05:30"
+2026-07-30 13:48:09 [INF] Cleaning expired API Keys at "2026-07-30T13:48:09.0348490+05:30"
+2026-07-30 13:49:09 [INF] Cleaning expired API Keys at "2026-07-30T13:49:09.2673045+05:30"
+2026-07-30 13:50:09 [INF] Cleaning expired API Keys at "2026-07-30T13:50:09.6996339+05:30"
+2026-07-30 13:51:06 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2026-07-30 13:51:06 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 caught stopping signal...
+2026-07-30 13:51:06 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 caught stopped signal...
+2026-07-30 13:51:06 [WRN] Server desktop-3n6fi4h:18532:a28dd6b3 caught shutdown signal...
+2026-07-30 13:51:06 [WRN] Server desktop-3n6fi4h:18532:a28dd6b3 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2026-07-30 13:51:06 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 successfully reported itself as stopped in 141.2215 ms
+2026-07-30 13:51:06 [INF] Server desktop-3n6fi4h:18532:a28dd6b3 has been stopped in total 172.6873 ms
+2026-07-30 13:54:25 [INF] Start installing Hangfire SQL objects...
+2026-07-30 13:54:25 [INF] Hangfire SQL objects installed.
+2026-07-30 13:54:33 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-30 13:54:33 [INF] Using the following options for PostgreSQL job storage:
+2026-07-30 13:54:33 [INF]     Queue poll interval: 00:00:15.
+2026-07-30 13:54:33 [INF]     Invisibility timeout: 00:30:00.
+2026-07-30 13:54:33 [INF]     Use sliding invisibility timeout: False.
+2026-07-30 13:54:33 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-30 13:54:33 [INF] Server desktop-3n6fi4h:30416:95b28547 successfully announced in 38.471 ms
+2026-07-30 13:54:33 [INF] Server desktop-3n6fi4h:30416:95b28547 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-30 13:54:34 [INF] Server desktop-3n6fi4h:30416:95b28547 all the dispatchers started
+2026-07-30 13:54:35 [INF] Cleaning expired API Keys at "2026-07-30T13:54:35.4412880+05:30"
+2026-07-30 13:54:46 [INF] HTTP GET /swagger/index.html responded 200 in 257.2509 ms
+2026-07-30 13:54:47 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 56.2663 ms
+2026-07-30 13:55:05 [INF] Cleaning expired API Keys at "2026-07-30T13:55:05.4511071+05:30"
+2026-07-30 13:55:25 [INF] Start installing Hangfire SQL objects...
+2026-07-30 13:55:26 [INF] Hangfire SQL objects installed.
+2026-07-30 13:55:30 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-30 13:55:30 [INF] Using the following options for PostgreSQL job storage:
+2026-07-30 13:55:30 [INF]     Queue poll interval: 00:00:15.
+2026-07-30 13:55:30 [INF]     Invisibility timeout: 00:30:00.
+2026-07-30 13:55:30 [INF]     Use sliding invisibility timeout: False.
+2026-07-30 13:55:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-30 13:55:31 [INF] Server desktop-3n6fi4h:23064:a08a9a6f successfully announced in 58.2729 ms
+2026-07-30 13:55:31 [INF] Server desktop-3n6fi4h:23064:a08a9a6f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-30 13:55:32 [INF] Server desktop-3n6fi4h:23064:a08a9a6f all the dispatchers started
+2026-07-30 13:55:33 [INF] HTTP GET /swagger/index.html responded 200 in 293.8277 ms
+2026-07-30 13:55:33 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 48.3407 ms
+2026-07-30 13:56:02 [INF] Cleaning expired API Keys at "2026-07-30T13:56:02.9736874+05:30"
+2026-07-30 13:57:02 [INF] Cleaning expired API Keys at "2026-07-30T13:57:02.9899981+05:30"
+2026-07-30 13:58:03 [INF] Cleaning expired API Keys at "2026-07-30T13:58:03.1111504+05:30"
+2026-07-30 13:59:03 [INF] Cleaning expired API Keys at "2026-07-30T13:59:03.2252041+05:30"
+2026-07-30 14:00:03 [INF] Cleaning expired API Keys at "2026-07-30T14:00:03.3324773+05:30"
+2026-07-30 14:00:31 [INF] 1 servers were removed due to timeout
+2026-07-30 14:01:03 [INF] Cleaning expired API Keys at "2026-07-30T14:01:03.4888581+05:30"
+2026-07-30 14:02:03 [INF] Cleaning expired API Keys at "2026-07-30T14:02:03.6307527+05:30"
+2026-07-30 14:03:03 [INF] Cleaning expired API Keys at "2026-07-30T14:03:03.7492130+05:30"
+2026-07-30 14:04:04 [INF] Cleaning expired API Keys at "2026-07-30T14:04:04.1763374+05:30"
+2026-07-30 14:05:03 [INF] Cleaning expired API Keys at "2026-07-30T14:05:03.9845904+05:30"
+2026-07-30 14:06:04 [INF] Cleaning expired API Keys at "2026-07-30T14:06:04.3262896+05:30"
+2026-07-30 14:06:16 [INF] HTTP POST /api/customers/register responded 401 in 270.1293 ms
+2026-07-30 14:06:36 [INF] HTTP GET /swagger/index.html responded 200 in 198.5775 ms
+2026-07-30 14:06:36 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 236.7957 ms
+2026-07-30 14:06:36 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 239.0082 ms
+2026-07-30 14:06:37 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 417.5213 ms
+2026-07-30 14:06:37 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 142.5803 ms
+2026-07-30 14:07:04 [INF] Cleaning expired API Keys at "2026-07-30T14:07:04.3730890+05:30"
+2026-07-30 14:07:22 [INF] Customer shukladeepika1023@gmail.com registered successfully.
+2026-07-30 14:07:24 [ERR] Unhandled Exception. Path: /api/customers/register
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Data.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.SubscriptionPlan.Customers.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StartupWebAPIs.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, AppDbContext dbContext) in D:\UserRepo\StartupWebAPIs\Middleware\ApiKeyMiddleware.cs:line 66
+   at StartupWebAPIs.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\UserRepo\StartupWebAPIs\Middleware\ExceptionMiddleware.cs:line 26
+2026-07-30 14:07:24 [ERR] HTTP POST /api/customers/register responded 500 in 13577.9753 ms
+2026-07-30 14:08:04 [INF] Cleaning expired API Keys at "2026-07-30T14:08:04.5001384+05:30"
+2026-07-30 14:09:00 [INF] HTTP GET /api/customers/register responded 401 in 1.7923 ms
+2026-07-30 14:09:00 [INF] HTTP GET /favicon.ico responded 404 in 9.1481 ms
+2026-07-30 14:09:04 [INF] Cleaning expired API Keys at "2026-07-30T14:09:04.6083073+05:30"
+2026-07-30 14:10:04 [INF] Cleaning expired API Keys at "2026-07-30T14:10:04.7294523+05:30"
+2026-07-30 16:07:23 [INF] Start installing Hangfire SQL objects...
+2026-07-30 16:07:24 [INF] Hangfire SQL objects installed.
+2026-07-30 16:07:27 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-30 16:07:27 [INF] Using the following options for PostgreSQL job storage:
+2026-07-30 16:07:27 [INF]     Queue poll interval: 00:00:15.
+2026-07-30 16:07:27 [INF]     Invisibility timeout: 00:30:00.
+2026-07-30 16:07:27 [INF]     Use sliding invisibility timeout: False.
+2026-07-30 16:07:27 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-30 16:07:27 [INF] Server desktop-3n6fi4h:21908:3c239a58 successfully announced in 33.1451 ms
+2026-07-30 16:07:27 [INF] Server desktop-3n6fi4h:21908:3c239a58 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-30 16:07:28 [INF] 1 servers were removed due to timeout
+2026-07-30 16:07:28 [INF] Removed 2 outdated record(s) from 'aggregatedcounter' table.
+2026-07-30 16:07:28 [INF] Server desktop-3n6fi4h:21908:3c239a58 all the dispatchers started
+2026-07-30 16:07:29 [INF] Cleaning expired API Keys at "2026-07-30T16:07:29.3478284+05:30"
+2026-07-30 16:07:29 [INF] Starting PDF report generation...
+2026-07-30 16:07:29 [INF] Removed 83 outdated record(s) from 'job' table.
+2026-07-30 16:07:31 [INF] HTTP GET /swagger responded 301 in 46.9907 ms
+2026-07-30 16:07:31 [INF] HTTP GET /swagger/index.html responded 200 in 200.0212 ms
+2026-07-30 16:07:32 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 49.9488 ms
+2026-07-30 16:07:34 [WRN] Failed to process the job '190': an exception occurred. Retry attempt 9 of 10 will be performed in 01:10:46.
+System.ArgumentNullException: Value cannot be null. (Parameter 'address')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.Mail.MailAddress.TryParse(String address, String displayName, Encoding displayNameEncoding, ValueTuple`4& parsedData, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddress..ctor(String address)
+   at StartupWebAPIs.Services.EmailService.SendEmailWithAttachmentAsync(String toEmail, String subject, String body, String attachmentPath) in D:\UserRepo\StartupWebAPIs\Services\EmailService.cs:line 62
+   at StartupWebAPIs.Jobs.ReportJobs.GenerateProductsPdfAsync() in D:\UserRepo\StartupWebAPIs\Jobs\ReportJobs.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-07-30 16:08:14 [INF] Cleaning expired API Keys at "2026-07-30T16:08:14.4295848+05:30"
+2026-07-30 16:08:42 [INF] Customer  registered successfully.
+2026-07-30 16:08:42 [INF] HTTP POST /api/customers/register responded 200 in 2509.2541 ms
+2026-07-30 16:09:14 [INF] Cleaning expired API Keys at "2026-07-30T16:09:14.8646931+05:30"
+2026-07-30 16:10:14 [INF] Cleaning expired API Keys at "2026-07-30T16:10:14.9984719+05:30"
+2026-07-30 16:11:00 [INF] Cleaning expired API Keys at "2026-07-30T16:11:00.1084854+05:30"
+2026-07-30 16:12:00 [INF] Cleaning expired API Keys at "2026-07-30T16:12:00.3106309+05:30"
+2026-07-30 16:13:16 [INF] Cleaning expired API Keys at "2026-07-30T16:13:16.2519824+05:30"
+2026-07-30 16:15:14 [INF] Cleaning expired API Keys at "2026-07-30T16:15:14.8620219+05:30"
+2026-07-30 16:15:14 [INF] Customer string registered successfully.
+2026-07-30 16:15:14 [INF] HTTP POST /api/customers/register responded 200 in 137401.5011 ms
+2026-07-30 16:15:58 [ERR] Unhandled Exception. Path: /api/customers/register
+System.Exception: Email already exists.
+   at StartupWebAPIs.Services.CustomerService.RegisterAsync(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Services\CustomerService.cs:line 41
+   at StartupWebAPIs.Controllers.CustomersController.Register(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Controllers\CustomersController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StartupWebAPIs.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, AppDbContext dbContext) in D:\UserRepo\StartupWebAPIs\Middleware\ApiKeyMiddleware.cs:line 66
+   at StartupWebAPIs.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\UserRepo\StartupWebAPIs\Middleware\ExceptionMiddleware.cs:line 26
+2026-07-30 16:15:58 [ERR] HTTP POST /api/customers/register responded 500 in 10236.4768 ms
+2026-07-30 16:16:14 [INF] Cleaning expired API Keys at "2026-07-30T16:16:14.9912162+05:30"
+2026-07-30 16:16:26 [ERR] Unhandled Exception. Path: /api/customers/register
+System.Exception: Email already exists.
+   at StartupWebAPIs.Services.CustomerService.RegisterAsync(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Services\CustomerService.cs:line 41
+   at StartupWebAPIs.Controllers.CustomersController.Register(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Controllers\CustomersController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StartupWebAPIs.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, AppDbContext dbContext) in D:\UserRepo\StartupWebAPIs\Middleware\ApiKeyMiddleware.cs:line 66
+   at StartupWebAPIs.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\UserRepo\StartupWebAPIs\Middleware\ExceptionMiddleware.cs:line 26
+2026-07-30 16:16:26 [ERR] HTTP POST /api/customers/register responded 500 in 6987.0442 ms
+2026-07-30 16:16:46 [ERR] Unhandled Exception. Path: /api/customers/register
+System.Exception: Email already exists.
+   at StartupWebAPIs.Services.CustomerService.RegisterAsync(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Services\CustomerService.cs:line 41
+   at StartupWebAPIs.Controllers.CustomersController.Register(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Controllers\CustomersController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StartupWebAPIs.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, AppDbContext dbContext) in D:\UserRepo\StartupWebAPIs\Middleware\ApiKeyMiddleware.cs:line 66
+   at StartupWebAPIs.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\UserRepo\StartupWebAPIs\Middleware\ExceptionMiddleware.cs:line 26
+2026-07-30 16:16:46 [ERR] HTTP POST /api/customers/register responded 500 in 2440.6405 ms
+2026-07-30 16:17:01 [INF] Cleaning expired API Keys at "2026-07-30T16:17:01.7427829+05:30"
+2026-07-30 16:18:01 [INF] Cleaning expired API Keys at "2026-07-30T16:18:01.9174656+05:30"
+2026-07-30 16:19:01 [INF] Cleaning expired API Keys at "2026-07-30T16:19:01.9898007+05:30"
+2026-07-30 16:20:02 [INF] Cleaning expired API Keys at "2026-07-30T16:20:02.1151309+05:30"
+2026-07-30 16:20:15 [ERR] Unhandled Exception. Path: /api/customers/register
+System.Exception: Email already exists.
+   at StartupWebAPIs.Services.CustomerService.RegisterAsync(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Services\CustomerService.cs:line 41
+   at StartupWebAPIs.Controllers.CustomersController.Register(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Controllers\CustomersController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StartupWebAPIs.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, AppDbContext dbContext) in D:\UserRepo\StartupWebAPIs\Middleware\ApiKeyMiddleware.cs:line 66
+   at StartupWebAPIs.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\UserRepo\StartupWebAPIs\Middleware\ExceptionMiddleware.cs:line 26
+2026-07-30 16:20:16 [ERR] HTTP POST /api/customers/register responded 500 in 3221.2072 ms
+2026-07-30 16:21:14 [INF] Cleaning expired API Keys at "2026-07-30T16:21:14.1448301+05:30"
+2026-07-30 16:21:30 [ERR] Unhandled Exception. Path: /api/customers/register
+System.Exception: Email already exists.
+   at StartupWebAPIs.Services.CustomerService.RegisterAsync(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Services\CustomerService.cs:line 41
+   at StartupWebAPIs.Controllers.CustomersController.Register(RegisterCustomerDto dto) in D:\UserRepo\StartupWebAPIs\Controllers\CustomersController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StartupWebAPIs.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, AppDbContext dbContext) in D:\UserRepo\StartupWebAPIs\Middleware\ApiKeyMiddleware.cs:line 66
+   at StartupWebAPIs.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\UserRepo\StartupWebAPIs\Middleware\ExceptionMiddleware.cs:line 26
+2026-07-30 16:21:43 [ERR] HTTP POST /api/customers/register responded 500 in 74245.7204 ms
+2026-07-30 16:22:55 [INF] Cleaning expired API Keys at "2026-07-30T16:22:55.1185631+05:30"
+2026-07-30 16:22:55 [INF] Customer shukladeepika1023@gmail.com registered successfully.
+2026-07-30 16:22:55 [INF] HTTP POST /api/customers/register responded 200 in 65674.9366 ms
+2026-07-30 16:23:10 [INF] Cleaning expired API Keys at "2026-07-30T16:23:10.1570061+05:30"
+2026-07-30 16:24:10 [INF] Cleaning expired API Keys at "2026-07-30T16:24:10.2422813+05:30"
+2026-07-30 16:36:39 [INF] Start installing Hangfire SQL objects...
+2026-07-30 16:36:39 [INF] Hangfire SQL objects installed.
+2026-07-30 16:36:45 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: ApiKeyManagerDB, Schema: hangfire'
+2026-07-30 16:36:45 [INF] Using the following options for PostgreSQL job storage:
+2026-07-30 16:36:45 [INF]     Queue poll interval: 00:00:15.
+2026-07-30 16:36:45 [INF]     Invisibility timeout: 00:30:00.
+2026-07-30 16:36:45 [INF]     Use sliding invisibility timeout: False.
+2026-07-30 16:36:45 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-30 16:36:46 [INF] Server desktop-3n6fi4h:28984:4e67d670 successfully announced in 44.1498 ms
+2026-07-30 16:36:46 [INF] Server desktop-3n6fi4h:28984:4e67d670 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-30 16:36:46 [INF] 1 servers were removed due to timeout
+2026-07-30 16:36:46 [INF] Removed 1 outdated record(s) from 'aggregatedcounter' table.
+2026-07-30 16:36:47 [INF] Server desktop-3n6fi4h:28984:4e67d670 all the dispatchers started
+2026-07-30 16:36:47 [INF] Removed 3 outdated record(s) from 'job' table.
+2026-07-30 16:36:48 [INF] Cleaning expired API Keys at "2026-07-30T16:36:48.3245115+05:30"
+2026-07-30 16:36:48 [INF] HTTP GET /swagger/index.html responded 200 in 210.4332 ms
+2026-07-30 16:36:48 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 38.2452 ms
+2026-07-30 16:37:03 [INF] Cleaning expired API Keys at "2026-07-30T16:37:03.2866431+05:30"
+2026-07-30 16:38:03 [INF] Cleaning expired API Keys at "2026-07-30T16:38:03.8481714+05:30"
+2026-07-30 16:39:03 [INF] Cleaning expired API Keys at "2026-07-30T16:39:03.5363758+05:30"
+2026-07-30 16:40:03 [INF] Cleaning expired API Keys at "2026-07-30T16:40:03.6521303+05:30"
+2026-07-30 16:41:03 [INF] Cleaning expired API Keys at "2026-07-30T16:41:03.7602904+05:30"
+2026-07-30 16:42:03 [INF] Cleaning expired API Keys at "2026-07-30T16:42:03.8962166+05:30"
+2026-07-30 16:43:04 [INF] Cleaning expired API Keys at "2026-07-30T16:43:04.0013980+05:30"
+2026-07-30 16:44:04 [INF] Cleaning expired API Keys at "2026-07-30T16:44:04.0814764+05:30"
+2026-07-30 16:45:04 [INF] Cleaning expired API Keys at "2026-07-30T16:45:04.1378453+05:30"
+2026-07-30 16:46:04 [INF] Cleaning expired API Keys at "2026-07-30T16:46:04.1845569+05:30"
+2026-07-30 16:47:04 [INF] Cleaning expired API Keys at "2026-07-30T16:47:04.3291413+05:30"
+2026-07-30 16:48:04 [INF] Cleaning expired API Keys at "2026-07-30T16:48:04.3898251+05:30"
+2026-07-30 16:49:04 [INF] Cleaning expired API Keys at "2026-07-30T16:49:04.4505713+05:30"
+2026-07-30 16:51:27 [INF] Cleaning expired API Keys at "2026-07-30T16:51:27.1779346+05:30"
+2026-07-30 16:52:12 [INF] Cleaning expired API Keys at "2026-07-30T16:52:12.2707737+05:30"
+2026-07-30 16:52:53 [INF] Customer shukladeepika1023@gmail.com logged in successfully.
+2026-07-30 16:52:53 [INF] HTTP POST /api/customers/login responded 200 in 2443.6087 ms
+2026-07-30 16:53:12 [INF] Cleaning expired API Keys at "2026-07-30T16:53:12.3833254+05:30"
+2026-07-30 16:54:12 [INF] Cleaning expired API Keys at "2026-07-30T16:54:12.5020979+05:30"
+2026-07-30 16:55:12 [INF] Cleaning expired API Keys at "2026-07-30T16:55:12.6009014+05:30"

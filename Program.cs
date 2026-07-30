@@ -22,6 +22,7 @@ using StartupWebAPIs.Services;
 using StartupWebAPIs.Swagger;
 using StartupWebAPIs.Validators;
 using System.Text;
+using StartupWebAPIs.Data;
 using System.Threading.RateLimiting;
 
 ////Serilog
@@ -81,6 +82,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IExcelReportService, ExcelReportService>();
 builder.Services.AddScoped<IPdfReportService, PdfReportService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
@@ -257,7 +260,13 @@ RecurringJob.AddOrUpdate<BackgroundJobs>(
 
 app.MapControllers();
 
-app.MapHealthChecks("/health"); 
+app.MapHealthChecks("/health");
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+    await DbSeeder.SeedAsync(context);
+}
 app.Run();
 
 

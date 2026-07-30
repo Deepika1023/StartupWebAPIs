@@ -18,6 +18,12 @@ namespace StartupWebAPIs.Data
 
         public DbSet<Product> Products => Set<Product>();
 
+        public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<SubscriptionPlan> SubscriptionPlans { get; set; }
+
+        public DbSet<ApiUsage> ApiUsages { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
