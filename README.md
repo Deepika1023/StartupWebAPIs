@@ -19,6 +19,10 @@ Docker
 Register the recurring job
 Real Email Service with Hangfire
 Configure SMTP Settings
+Customer Authentication with JWT Login, SaaS Foundation
+Subscription Plans
+Customer Management
+JWT Authentication for Customers
 ## Technologies
 
 - ASP.NET Core 8
